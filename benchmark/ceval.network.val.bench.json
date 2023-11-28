@@ -1,0 +1,48 @@
+{
+    "basic_information": {
+        "name": "ceval-computer_network-val",
+        "creator": "anonymous",
+        "date": "2023/11/15",
+        "info": "ceval, computer network, validation set"
+    },
+    "cases": [
+        {
+            "input": "使用位填充方法，以01111110为位首flag，数据为011011111111111111110010，求问传送时要添加几个0____\nA.1\nB.2\nC.3\nD.4",
+            "formatter": "default",
+            "expected_answer": "C",
+            "evaluator": "exact_match",
+            "evaluator_args": {},
+            "info": "test1"
+        }
+    ],
+    "formatter": [
+        {
+            "name": "default",
+            "definition": "function formatter(llm_response){return llm_response}",
+            "info": "do nothing"
+        },
+        {
+            "name": "extract_choice",
+            "definition": 
+            [
+                "function choice(response) {",
+                "    var choices = [\"A\", \"B\", \"C\", \"D\"];",
+                "    for (var i = 0; i < choices.length; i++) {",
+                "        if(response.indexOf(choices[i]) != -1) {",
+                "            return choices[i];",
+                "        }",
+                "    }",
+                "    return \"None\";",
+                "}"
+            ],
+            "info": "extract A/B/C/D or None"
+        }
+    ],
+    "evaluator": [
+        {
+            "name": "exact_match",
+            "definition": "function evaluator(formatted_response, expected_answer){return formatted_response == expected_answer}",
+            "info": "exact match"
+        }
+    ]
+}

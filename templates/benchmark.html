@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang=""en>
+<head>
+    <meta charset="UTF-8">
+    <title>{{basic_information.name}}</title>
+    <style>
+        /* Apply basic styles for columns */
+        .container {
+        display: flex;
+        justify-content: space-between;
+        }
+        .column {
+        width: 45%; /* Adjust as needed */
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="column">
+    <b>Benchmark Info</b>
+    <p>Benchmark name: {{ basic_information.name }}</p> 
+    <p>Benchmark creator: {{ basic_information.creator }}</p>
+    <p>Benchmark date: {{ basic_information.date }}</p>
+    <p>Benchmark description: {{ basic_information.info }}</p>
+    <br></br>
+    
+    <b>Formatters</b>
+    {% for formatter in formatters%}
+    <p>Formatter name: {{ formatter.name }}</p>
+    <!-- <p>Formatter definition: {{ formatter.definition|safe }}</p> -->
+    <p>Formatter definition: </p>
+    <textarea style="height: 200px; width: 700px; resize:none">{{ formatter.definition|safe }}</textarea>
+    <p>Formatter info: {{ formatter.info }}</p>
+    <br></br>
+    {% endfor %}
+
+    <b>Evaluators</b>
+    {% for evaluator in evaluators %}
+    <p>Evaluator name: {{ evaluator.name }}</p>
+    <p>Evaluator definition: </p>
+    <textarea style="height: 200px; width: 200px; resize:none">{{ evaluator.definition|safe }}</textarea>
+    <p>Evaluator info: {{ evaluator.info }}</p>
+    <br></br>
+    {% endfor %}
+
+    <b>Results</b>
+
+    </div>
+    <div class="column">
+    <b>Cases</b>
+    <button onclick="send_all_case()">run all</button>
+
+    {% for i in range( cases|length ) %}
+    <ul>
+        <p>{{ cases[i].input }}</p>
+        <!-- <li>{{ cases[i].formatter }}</li> -->
+        <!-- <li>{{ cases[i].evaluator }}</li> -->
+        <button onclick="send_case('{{i}}', `{{cases[i].input}}`, `{{cases[i].expected_answer}}`, '{{ cases[i].formatter }}', '{{ cases[i].evaluator }}', `{{ cases[i].evaluator_args }}`)">run</button>
+        <li id="raw_response_{{i}}">raw response: </li>
+        <li id="formatted_response_{{i}}">formatted response: </li>
+        <li id="expected_answer_{{i}}">expected answer: {{cases[i].expected_answer}}</li>
+        <li id="evaluation_{{i}}">evaluation: </li>
+    </ul>
+    {% endfor %}
+
+    </div>
+</body>
+
+{% for formatter in formatters %}
+<!-- <script id="formatter_{{formatter.name}}">
+    {{ formatter.definition|safe}}
+</script> -->
+<script>
+    {{ formatter.definition|safe }}
+</script>
+{% endfor %}
+
+{% for evaluator in evaluators %}
+<script>
+    {{ evaluator.definition|safe }}
+</script>
+{% endfor %}
+
+<script>
+function send_all_case() {
+    {% for i in range( cases|length) %}
+    send_case('{{i}}', `{{cases[i].input}}`, `{{cases[i].expected_answer}}`, '{{ cases[i].formatter }}', '{{ cases[i].evaluator }}', `{{ cases[i].evaluator_args }}`)
+    {% endfor %}
+}
+
+function send_case(id, input, expected_answer, formatter, evaluator, evaluator_args) {
+
+    console.log(id);
+    console.log(input);
+    fetch('/process_data', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({'id': id, 'input': input})
+    })
+    .then(response => response.json())
+    .then(data => {
+        // console.log('Response from backend:', data);
+        console.log(data);
+        console.log(data.response);
+        console.log("output_".concat(id));
+        var raw_response = data.response;
+        var formatted_response = window[formatter](raw_response);
+        // var evaluation = exact_string_match(formatted_response, expected_answer);
+        var evaluation = window[evaluator](formatted_response, expected_answer, evaluator_args);
+
+
+        document.getElementById("raw_response_".concat(id)).innerText = "raw response: " + raw_response;
+        document.getElementById("formatted_response_".concat(id)).innerText = "formatted response: " + formatted_response;
+        document.getElementById("evaluation_".concat(id)).innerText = "evaluation: " + evaluation;
+    })
+    .catch(error => {
+        console.error('Error:', error)
+    })
+}
+</script>
