@@ -1,0 +1,149 @@
+{
+    "basic_information": {
+        "name": "ceval-computer-network-val",
+        "creator": "ceval",
+        "date": "2023/11",
+        "info": "ceval, computer network, validation set"
+    },
+    "cases": [
+        {
+            "input": "使用位填充方法，以01111110为位首flag，数据为011011111111111111110010，求问传送时要添加几个0____\nA: 1\nB: 2\nC: 3\nD: 4",
+            "expected_answer": "C",
+            "info": "case 0"
+        },
+        {
+            "input": "在802.3标准中，发送帧之前需要____\nA: 等待冲突\nB: 等待令牌\nC: 监听介质\nD: 接受一个帧",
+            "expected_answer": "C",
+            "info": "case 1"
+        },
+        {
+            "input": "TCP端对端通信作用于____\nA: 主机之间\nB: 网络之间\nC: 进程之间\nD: 主机到网络",
+            "expected_answer": "C",
+            "info": "case 2"
+        },
+        {
+            "input": "对于传输层来说错误的是____\nA: TCP是全双工协议\nB: TCP是字节流协议\nC: TCP和UDP协议不能使用同一个端口\nD: TSAD是IP和端口的组合",
+            "expected_answer": "C",
+            "info": "case 3"
+        },
+        {
+            "input": "已知当前TCP连接的RTT值为35ms，连续收到3个确认报文段，它们比相应的数据报文段的发送时间滞后了27ms、30ms与21ms。假设α=0.2，则第三个确认报文段到达后新的RTT估计值为____。\nA: 33.4ms\nB: 32.7ms\nC: 21ms\nD: 30.4ms",
+            "expected_answer": "D",
+            "info": "case 4"
+        },
+        {
+            "input": "对于UDP协议，如果想实现可靠传输，应在哪一层实现____\nA: 数据链路层\nB: 网络层\nC: 传输层\nD: 应用层",
+            "expected_answer": "D",
+            "info": "case 5"
+        },
+        {
+            "input": "数据链路层采用了后退N帧的(GBN)协议，如果发送窗口的大小是32，那么至少需要____位的序列号才能保证协议不出错。\nA: 4\nB: 5\nC: 6\nD: 7",
+            "expected_answer": "C",
+            "info": "case 6"
+        },
+        {
+            "input": "TCP“三次握手”过程中，第二次“握手”时，发送的报文段中____标志位被置为1。\nA: SYN\nB: ACK\nC: ACK和RST\nD: SYN和ACK",
+            "expected_answer": "D",
+            "info": "case 7"
+        },
+        {
+            "input": "一个TCP连接的数据传输阶段，如果发送端的发送窗口值由2000变为3000，意味着发送端可以____。\nA: 在收到一个确认之前可以发送3000个TCP报文段\nB: 在收到一个确认之前可以发送1000B\nC: 在收到一个确认之前可以发送3000B\nD: 在收到一个确认之前可以发送2000个TCP报文段",
+            "expected_answer": "C",
+            "info": "case 8"
+        },
+        {
+            "input": "关于传输层的面向连接服务的特性是____。\nA: 既不保证可靠，也不保证按序交付\nB: 不保证可靠，但保证按序交付\nC: 保证可靠，但不保证按序交付\nD: 既保证可靠，也保证按序交付",
+            "expected_answer": "D",
+            "info": "case 9"
+        },
+        {
+            "input": "____采用链路状态算法\nA: RIP\nB: OSPF\nC: BGP-4\nD: EGP",
+            "expected_answer": "B",
+            "info": "case 10"
+        },
+        {
+            "input": "一个TCP连接的数据传输阶段，如果发送端的发送窗口值由2000变为3000，意味着发送端可以____。\nA: 在收到一个确认之前可以发送3000个TCP报文段\nB: 在收到一个确认之前可以发送1000字节\nC: 在收到一个确认之前可以发送3000字节\nD: 在收到一个确认之前可以发送2000个TCP报文段",
+            "expected_answer": "C",
+            "info": "case 11"
+        },
+        {
+            "input": "下列关于交换技术叙述错误的是____\nA: 电路交换在发送与接收方的物理链路上预留带宽\nB: 数据报交换可能出现分组乱序\nC: 数据报交换可能出现分组乱序\nD: 报文交换要求有较大缓存",
+            "expected_answer": "B",
+            "info": "case 12"
+        },
+        {
+            "input": "现在大量的计算机是通过诸如以太网这样的局域网连入广域网的，而局域网与广域网的互联是通过____实现的。\nA: 路由器\nB: 资源子网\nC: 桥接器\nD: 中继器",
+            "expected_answer": "A",
+            "info": "case 13"
+        },
+        {
+            "input": "局域网的协议结构包括____。\nⅠ．网络层Ⅱ．数据链路层\nⅢ．物理层Ⅳ．介质访问控制层\nA: Ⅰ、Ⅱ、Ⅲ\nB: Ⅰ、Ⅱ、Ⅳ\nC: Ⅰ、Ⅲ、Ⅳ\nD: Ⅱ、Ⅲ、Ⅳ",
+            "expected_answer": "D",
+            "info": "case 14"
+        },
+        {
+            "input": "HTTP1.0中，传输一个文本和三个图片需要建立____个TCP连接\nA: 2\nB: 3\nC: 4\nD: 5",
+            "expected_answer": "C",
+            "info": "case 15"
+        },
+        {
+            "input": "UDP报头部长度为____。\nA: 8B\nB: 20B\nC: 60B\nD: 不定长",
+            "expected_answer": "A",
+            "info": "case 16"
+        },
+        {
+            "input": "主机甲与主机乙之间已建立一个TCP连接，主机甲向主机乙发送了3个连续的TCP段，分别包含300字节、400字节和500字节的有效载荷，第3个段的序号为9000若主机乙仅正确接收到第1和第3个段，则主机乙发送给主机甲的确认序号是____。\nA: 300\nB: 500\nC: 1200\nD: 1400",
+            "expected_answer": "B",
+            "info": "case 17"
+        },
+        {
+            "input": "若采用后退N帧ARQ协议进行流量控制，帧编号字段为7位，则发送窗口的最大长度为____。\nA: 7\nB: 8\nC: 127\nD: 128",
+            "expected_answer": "C",
+            "info": "case 18"
+        }
+    ],
+    "formatters": [
+        {
+            "name": "default1",
+            "definition": "function formatter(llm_response){return llm_response}",
+            "info": "do nothing"
+        },
+        {
+            "name": "extract_choice",
+            "definition": [
+                "function formatter(llm_response) {",
+                "    var choices = [\"A\", \"B\", \"C\", \"D\"];",
+                "    for (var i = 0; i < choices.length; i++) {",
+                "        if(llm_response.indexOf(choices[i]) != -1) {",
+                "    }",
+                "    return \"None\";",
+                "}"
+            ],
+            "info": "extract A/B/C/D or None"
+        }
+    ],
+    "evaluators": [
+        {
+            "name": "exact_string_match",
+            "definition": "function evaluator(formatted_response, expected_answer, args){if (formatted_response == expected_answer) return 1; else return 0;}",
+            "info": "exact match"
+        },
+        {
+            "name": "likert_scale",
+            "definition": "async function evaluator(formatted_response, expected_answer, args){return await user_input(formatted_response, expected_answer, args)}",
+            "info": ""
+        },
+        {
+            "name": "compare_with_llm",
+            "definition": "function evaluator(formatted_response, expected_answer, args){}"
+        }
+    ],
+    "evaluation": {
+        "reference_type": "Given",
+        "target_formatter": "extract_choice",
+        "target_LLM": "GPT-3.5",
+        "reference_LLM": "random",
+        "reference_formatter": "extract_choice",
+        "evaluator": "exact_string_match"
+    }
+}

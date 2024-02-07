@@ -1,0 +1,156 @@
+{
+    "basic_information": {
+        "name": "AlignBench",
+        "creator": "align benchmark, first 20 lines",
+        "date": "2023/12",
+        "info": "thu-coai"
+    },
+    "cases": [
+        {
+            "input": "高音单簧管和高音萨克斯的调性相同吗？如果相同，请说出他们的调性，如果不同，请分别说出他们的调性",
+            "expected_answer": "高音单簧管和高音萨克斯的调性不同。高音单簧管的调性通常为E♭，而高音萨克斯的调性则为B♭。\n",
+            "info": "question_id: 1, category: 专业能力, subcategory: 音乐"
+        },
+        {
+            "input": "卡卡的第一个帽子戏法是于哪个赛季与哪个队比赛时完成的？",
+            "expected_answer": "2006年4月9日，在与切沃的意甲第33轮比赛中完成的",
+            "info": "question_id: 2, category: 专业能力, subcategory: 体育"
+        },
+        {
+            "input": "动画《星际牛仔》的片尾曲是由谁作词的？",
+            "expected_answer": "岩里祐穂",
+            "info": "question_id: 3, category: 专业能力, subcategory: 其他"
+        },
+        {
+            "input": "原子弹之父于何时当选为美国科学院院士？",
+            "expected_answer": "罗伯特·奥本海默（Robert Oppenheimer）被誉为“原子弹之父”，他在1941年当选为美国科学院院士。\n",
+            "info": "question_id: 4, category: 专业能力, subcategory: 历史"
+        },
+        {
+            "input": "UFC的运动员伊斯瑞尔·阿迪萨亚为什么被称为黑龙？",
+            "expected_answer": "因为阿迪萨亚在年轻的时候曾经在中国打踢拳比赛，被收编为中国队的一员，且当时主办方要求阿迪萨亚身披中国国旗出战，为他量身定做了口号：“黑皮肤、中国心，我是黑龙”，因此而得名。",
+            "info": "question_id: 5, category: 专业能力, subcategory: 体育"
+        },
+        {
+            "input": "足球运动员内马尔在哪个赛季获得了他的第一个欧洲金靴奖？",
+            "expected_answer": "内马尔在2014-15赛季获得他的第一个欧洲金靴奖。",
+            "info": "question_id: 6, category: 专业能力, subcategory: 体育"
+        },
+        {
+            "input": "书写高锰酸钾和亚硫酸氢钠反应生成二氧化锰反应方程式",
+            "expected_answer": "4KMnO4 + 6NaHSO3 = 4MnO2↓ + 3Na2SO4 + 2K2SO4 + H2SO4 + 2H2O",
+            "info": "question_id: 7, category: 专业能力, subcategory: 化学"
+        },
+        {
+            "input": "麦哲伦航队在全球旅行时使用了六分仪测量经纬度么？",
+            "expected_answer": "不，麦哲伦航队在全球旅行时没有使用六分仪来测量经纬度。麦哲伦环球航行的时间是1519年—1522年，六分仪的原理由伊萨克·牛顿提出，而牛顿的出生时间是1643年1月4日，所以再麦哲伦航行的时间六分仪尚未被发明，使用六分仪是不可能的。",
+            "info": "question_id: 8, category: 专业能力, subcategory: 历史"
+        },
+        {
+            "input": "某系统中有三个并发进程竞争资源R，每个进程都需要5个R，那么至少有几个R，才保证不会发生死锁",
+            "expected_answer": "每个进程都得到4个资源，即无法执行，也没有多余资源，于是就出现死锁\n如果再有1个多余资源，不管给任何一个进程，该进程就可以执行；执行完之后释放出5个资源，于是其它进程也可以执行，就不会发生死锁\n所以最小需要12 + 1 = 13个资源",
+            "info": "question_id: 9, category: 专业能力, subcategory: 计算机"
+        },
+        {
+            "input": "魔术师约翰逊在1995-1996赛季场均得分是多少？",
+            "expected_answer": "在1995-1996赛季，魔术师约翰逊（Magic Johnson）进行了32场比赛，场均得分14.6分。\n",
+            "info": "question_id: 10, category: 专业能力, subcategory: 体育"
+        },
+        {
+            "input": "法国、英国、西班牙、瑞士、德国、意大利、荷兰、比利时，其中任意2个国家相互接壤，是对的么",
+            "expected_answer": "不对。这些国家中并非任意两个国家都相互接壤。例如，英国和瑞士就不接壤，荷兰和意大利也不接壤。",
+            "info": "question_id: 11, category: 专业能力, subcategory: 地理"
+        },
+        {
+            "input": "尤文图斯的欧冠亚军次数加上AC米兰的欧冠冠军次数等于多少？",
+            "expected_answer": "尤文图斯的欧冠亚军次数是7次，AC米兰的欧冠冠军次数是7次，因此总数为14次。\n",
+            "info": "question_id: 12, category: 专业能力, subcategory: 体育"
+        },
+        {
+            "input": "C大七和弦和C小七和弦有几个音不同？他们分别是和弦的第几个音？",
+            "expected_answer": "C大七和弦（Cmaj7）由四个音符构成：C、E、G和B。\n\nC小七和弦（Cm7）也由四个音符构成：C、Eb、G和Bb。\n\n因此，C大七和弦和C小七和弦有两个音不同，分别是和弦的第二个和第四个音。C大七和弦的第二个音E和第四个音B，与C小七和弦的第二个音Eb和第四个音Bb不同。\n",
+            "info": "question_id: 13, category: 专业能力, subcategory: 音乐"
+        },
+        {
+            "input": "梅西和C罗哪位获得的金球奖更多？",
+            "expected_answer": "到2023年，梅西获得了7次金球奖，C罗获得了5次。所以梅西获得金球奖更多。",
+            "info": "question_id: 14, category: 专业能力, subcategory: 体育"
+        },
+        {
+            "input": "C大调音阶的9音和C大调音阶的第2个音是否相同？",
+            "expected_answer": "是的，C大调音阶的第9个音和第2个音是相同的。在 C大调音阶中，从C开始数，第2个音是D，第9个音也是D。这是因为在一个八度内的音阶中只有七个不同的音符，所以当我们继续数过8以后，音符就会开始重复。\n",
+            "info": "question_id: 15, category: 专业能力, subcategory: 音乐"
+        },
+        {
+            "input": "外号京阿尼的动画公司改编了米泽穗信的同名网络小说并制作了动画，这个动画的女主角的声优是谁？",
+            "expected_answer": "女主角千反田爱瑠的声优是佐藤聪美。\n",
+            "info": "question_id: 16, category: 专业能力, subcategory: 其他"
+        },
+        {
+            "input": "列出常用的泰勒展开公式",
+            "expected_answer": "1. e^x的泰勒展开式：e^x = 1 + x + x^2/2! + x^3/3! + x^4/4! + ... + x^n/n! + ...\n\n2. sin(x)的泰勒展开式：sin(x) = x - x^3/3! + x^5/5! - x^7/7! + ... + (-1)^(n-1) * x^(2n-1)/(2n-1)! + ...\n\n3. cos(x)的泰勒展开式：cos(x) = 1 - x^2/2! + x^4/4! - x^6/6! + ... + (-1)^n * x^(2n)/(2n)! + ...\n\n4. ln(1+x)的泰勒展开式：ln(1+x) = x - x^2/2 + x^3/3 - x^4/4 + ... + (-1)^(n-1) * x^n/n + ...\n\n5. (1+x)^n的泰勒展开式：(1+x)^n = 1 + nx + n(n-1)x^2/2! + n(n-1)(n-2)x^3/3! + ... + C(n, k)x^k + ...\n\n其中，n!表示n的阶乘，C(n, k)表示从n个不同的元素中取出k个元素的组合数。",
+            "info": "question_id: 17, category: 专业能力, subcategory: 其他"
+        },
+        {
+            "input": "千年女优的导演因为什么而去世？",
+            "expected_answer": "千年女优的导演，是日本著名的动画导演今敏。他于2010年因为罹患胰脏癌而病逝。",
+            "info": "question_id: 18, category: 专业能力, subcategory: 其他"
+        },
+        {
+            "input": "Milvus数据库是什么",
+            "expected_answer": "Milvus是一个开源的向量数据库，用于处理大规模的向量数据和进行相似度搜索。它提供了高效的向量索引和查询功能，可以广泛应用于机器学习、深度学习、推荐系统、图像识别等领域。Milvus支持多种向量索引算法，如HNSW、IVF等，并提供了丰富的API接口，方便用户进行数据管理和查询操作。",
+            "info": "question_id: 19, category: 专业能力, subcategory: 计算机"
+        },
+        {
+            "input": "世界历史上第一封电报由何处发向何处，两处的距离有多远？",
+            "expected_answer": "世界历史上第一封电报由美国的华盛顿发向美国的巴尔的摩，两地的距离大约为45公里。",
+            "info": "question_id: 20, category: 专业能力, subcategory: 历史"
+        }
+    ],
+    "formatters": [
+        {
+            "name": "default1",
+            "definition": "function formatter(llm_response){return llm_response}",
+            "info": "do nothing"
+        },
+        {
+            "name": "extract_choice",
+            "definition": [
+                "function formatter(llm_response) {",
+                "    var choices = [\"A\", \"B\", \"C\", \"D\"];",
+                "    for (var i = 0; i < choices.length; i++) {",
+                "        if(llm_response.indexOf(choices[i]) != -1) {",
+                "            return choices[i];",
+                "        }",
+                "    }",
+                "    return \"None\";",
+                "}"
+            ],
+            "info": "extract A/B/C/D or None"
+        }
+    ],
+    "evaluators": [
+        {
+            "name": "exact_string_match",
+            "definition": "function evaluator(formatted_response, expected_answer, args){if (formatted_response == expected_answer) return 1; else return 0;}",
+            "info": "exact match"
+        },
+        {
+            "name": "likert_scale",
+            "definition": "async function evaluator(formatted_response, expected_answer, args){return await user_input(formatted_response, expected_answer, args)}",
+            "info": ""
+        },
+        {
+            "name": "compare_with_llm",
+            "definition": "function evaluator(formatted_response, expected_answer, args){}"
+        }
+    ],
+    "evaluation": {
+        "reference_type": "Generated",
+        "target_formatter": "default1",
+        "target_LLM": "GPT-3.5",
+        "reference_LLM": "GPT-3.5",
+        "reference_formatter": "extract_choice",
+        "evaluator": "likert_scale"
+    }
+}

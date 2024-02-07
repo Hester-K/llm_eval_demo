@@ -3,14 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            width: 90%; /* Adjust as needed */
+            border: 1px solid #ccc;
+            padding: 5%;
+            box-sizing: border-box;
+            margin: auto;
+            margin-top: 100px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>选择benchmark文件</h1>
-    <form method="post" action="/add/user">
-        <!-- <input type="text" name="user" placeholder="用户名"> -->
-        <input type="submit" value="提 交">
-    </form>
+    <div class="column">
+        <h1>选择或上传benchmark文件</h1>
+        <hr>
+        <!-- {% if message != "None"%} -->
+        <!-- <p>{{message}}</p> -->
+        <!-- {% endif %} -->
+        <br>
+        <p>已有benchmark文件：
+        <select id="benchmark">
+            {% for filename in filename%}
+                <option value="{{filename}}">{{filename}}</option>
+            {% endfor %}
+        </select>
+        <button onclick="choose_benchmark()">选择</button>
+        </p>
+        <br>
+
+        <p>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" value="选择文件">
+            <input type="submit" value="上传">
+        </form>
+        </p>
+    </div>
 
 </body>
 </html>
+
+<script>
+function choose_benchmark() {
+    filename = document.getElementById("benchmark").value;
+    window.location.href = window.location.href + 'benchmark/' + filename;
+}
+</script>
