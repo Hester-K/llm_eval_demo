@@ -1,0 +1,188 @@
+{
+    "basic_information": {
+        "name": "ceval_plant_protection_val",
+        "creator": "ceval",
+        "date": "2023/05",
+        "info": "ceval, plant_protection, validation set"
+    },
+    "cases": [
+        {
+            "input": "与保卫细胞的水势变化关系最密切的离子是____。\nA: $Ca^{2+}$\nB: $K^+$\nC: $Cl^-$\nD: $Mg^{2+}$",
+            "expected_answer": "B",
+            "info": "case 0"
+        },
+        {
+            "input": "已经发生质壁分离的细胞，细胞的水势决定于细胞的____。\nA: 渗透势\nB: 压力势\nC: 衬质势\nD: 膨压",
+            "expected_answer": "A",
+            "info": "case 1"
+        },
+        {
+            "input": "种子的萌发过程对水分的吸收速度有所不同，一般表现为____。\nA: 快—慢—快\nB: 慢—快—慢\nC: 快—慢\nD: 慢—快",
+            "expected_answer": "A",
+            "info": "case 2"
+        },
+        {
+            "input": "在细胞伸长过程中，新的细胞壁物质中纤维素是在____中合成，然后分泌到细胞壁中。\nA: 细胞质膜\nB: 高尔基体\nC: 线粒体\nD: 叶绿体",
+            "expected_answer": "A",
+            "info": "case 3"
+        },
+        {
+            "input": "微管是两种微管蛋白组成的异二聚体，这两种微管蛋白是____。\nA: 肌动蛋白，肌动蛋白结合蛋白\nB: 马达蛋白，肌球蛋白\nC: α-微管蛋白，β-微管蛋白\nD: 动蛋白，力蛋白",
+            "expected_answer": "C",
+            "info": "case 4"
+        },
+        {
+            "input": "在植物对逆境的适应中最为重要的植物激素是____。\nA: 细胞分裂素\nB: 乙烯\nC: 茉莉酸甲酯\nD: 脱落酸",
+            "expected_answer": "D",
+            "info": "case 5"
+        },
+        {
+            "input": "下列四组矿质元素，哪组元素的缺素症表现为叶片缺绿?____\nA: Fe，Cl，N，Ca\nB: Mg，Fe，N，S\nC: P，N，Mg，S\nD: P，Mo，Mg，S",
+            "expected_answer": "B",
+            "info": "case 6"
+        },
+        {
+            "input": "在衰老的植物组织或器官中，蛋白质含量显著下降，其主要原因是____。\nA: 蛋白质周转速率降低\nB: 氨基酸的生物合成受阻\nC: 蛋白质水解酶活性增加\nD: 土壤中氮素含量下降",
+            "expected_answer": "C",
+            "info": "case 7"
+        },
+        {
+            "input": "G蛋白是由α、β、γ3种亚基构成的异三聚体，与GTP结合的活性位点在____上。\nA: α亚基\nB: β亚基\nC: γ亚基\nD: βγ亚基复合体",
+            "expected_answer": "A",
+            "info": "case 8"
+        },
+        {
+            "input": "已分化的细胞在特定情况下恢复分裂能力，重新进行细胞分裂的过程为____。\nA: 细胞分化\nB: 细胞分裂\nC: 再分化\nD: 脱分化",
+            "expected_answer": "D",
+            "info": "case 9"
+        },
+        {
+            "input": "植物器官、组织或细胞在形态结构、生化组成以及生理功能上的不对称性是____。\nA: 细胞生长\nB: 细胞分化\nC: 极性\nD: 细胞全能性",
+            "expected_answer": "C",
+            "info": "case 10"
+        },
+        {
+            "input": "耐热性强的植物原生质蛋白质具有的特点是____。\nA: 易发生不可逆的变性与凝聚\nB: 疏水键多，二硫键少\nC: 对热稳定，疏水键和二硫键多\nD: 对热稳定，疏水键和二硫键少",
+            "expected_answer": "C",
+            "info": "case 11"
+        },
+        {
+            "input": "细胞在形态结构、内部代谢和生理功能上区别于原分生细胞的过程是____。\nA: 细胞生长\nB: 细胞分化\nC: 细胞脱分化\nD: 细胞再分化",
+            "expected_answer": "B",
+            "info": "case 12"
+        },
+        {
+            "input": "光学显微镜下呈现出的细胞结构被称为____。\nA: 显微结构\nB: 亚显微结构\nC: 超显微结构\nD: 亚细胞结构",
+            "expected_answer": "A",
+            "info": "case 13"
+        },
+        {
+            "input": "根尖中根的干细胞群是指____。\nA: 根冠\nB: 静止中心\nC: 分生组织\nD: 根毛",
+            "expected_answer": "B",
+            "info": "case 14"
+        },
+        {
+            "input": "质膜上已知的离子通道有____。\nA: $K^+$，$Mg^{2+}$，$Ca^{2+}$\nB: $K^+$，$Cl^-$，$Ca^{2+}$\nC: $K^+$，$Cl^-$，$Mg^{2+}$\nD: $K^+$，$Zn^{2+}$，$Ca^{2+}$和$Fe^{2+}$",
+            "expected_answer": "B",
+            "info": "case 15"
+        },
+        {
+            "input": "把植物组织放在高渗溶液中，植物组织____。\nA: 吸水\nB: 失水\nC: 水分动态平衡\nD: 水分不变化",
+            "expected_answer": "B",
+            "info": "case 16"
+        },
+        {
+            "input": "下列哪种元素的缺素症表现为植物叶尖积累过多的脲，严重出现坏死?____\nA: Ni\nB: Mn\nC: Fe\nD: Ca",
+            "expected_answer": "A",
+            "info": "case 17"
+        },
+        {
+            "input": "植物根系吸收后，在____被还原。\nA: 叶肉细胞\nB: 根组织\nC: 植物体地上部\nD: 根组织和叶肉细胞",
+            "expected_answer": "D",
+            "info": "case 18"
+        },
+        {
+            "input": "在高温气候条件下用冷水灌溉植物往往会引起____。\nA: 植物蒸腾加剧\nB: 植物萎蔫\nC: 植物快速吸水\nD: 植物生长加速",
+            "expected_answer": "B",
+            "info": "case 19"
+        },
+        {
+            "input": "高等植物花粉管向着胚珠的生长是____运动。\nA: 向光性\nB: 向化性\nC: 向重性\nD: 向触性",
+            "expected_answer": "B",
+            "info": "case 20"
+        },
+        {
+            "input": "下列属于生理碱性盐的是____。\nA: $NaNO_3$\nB: $(NH_4)_2SO_4$\nC: $NH_4NO_3$\nD: $MgSO_4$",
+            "expected_answer": "A",
+            "info": "case 21"
+        }
+    ],
+    "formatters": [
+        {
+            "name": "default_format",
+            "definition": "function formatter(llm_response){return llm_response}",
+            "info": "do nothing"
+        },
+        {
+            "name": "extract_ABCD",
+            "definition": [
+                "function formatter(llm_response) {",
+                "    let pred = -1;",
+                "    if (!llm_response) {",
+                "        return pred;",
+                "    }",
+                "   const regex = /[A-D]\\./;",
+                "   const match = llm_response.match(regex);  ",
+                "   if (match) {  ",
+                "       pred = match[0][0];  ",
+                "       return pred;",
+                "   }",
+                "    for (let k = 0; k < 4; k++) {",
+                "        const x = String.fromCharCode(65 + k); // ASCII code for 'A' + k  ",
+                "        if (",
+                "            llm_response.includes(x + ')') ||",
+                "            llm_response.includes(x + '：') ||",
+                "            llm_response[llm_response.length - 1] === x ||",
+                "            (llm_response.length > 1 && llm_response[llm_response.length - 2] === x) ||  ",
+                "            llm_response.includes(x + '。')  ",
+                "        ) {  ",
+                "            pred = x;",
+                "            return pred;",
+                "        }  ",
+                "        if ( ",
+                "            llm_response.startsWith(x + ' ') || ",
+                "            llm_response.startsWith(x + '.') || ",
+                "            llm_response.startsWith(x + '(')  ",
+                "        ) {  ",
+                "            pred = x;  ",
+                "            return pred;  ",
+                "        }  ",
+                "    }  ",
+                "    return pred;  ",
+                "}"
+            ],
+            "info": "extract A/B/C/D if possible, else return -1"
+        }
+    ],
+    "evaluators": [
+        {
+            "name": "accuracy",
+            "definition": "function evaluator(formatted_response, expected_answer, args){if (formatted_response == expected_answer) return 1; else return 0;}",
+            "info": "exact string match"
+        },
+        {
+            "name": "likert_scale",
+            "definition": "async function evaluator(formatted_response, expected_answer, args){return await user_input(formatted_response, expected_answer, args)}",
+            "info": "human evaluation, rating from 1 to 5"
+        }
+    ],
+    "evaluation": {
+        "target_LLM": "GPT-3.5",
+        "target_formatter": "extract_ABCD",
+        "reference_type": "given",
+        "reference_LLM": "None",
+        "reference_formatter": "extract_ABCD",
+        "evaluator": "accuracy",
+        "summary": "None"
+    }
+}

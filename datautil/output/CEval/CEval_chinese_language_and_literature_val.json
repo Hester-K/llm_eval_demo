@@ -1,0 +1,193 @@
+{
+    "basic_information": {
+        "name": "ceval_chinese_language_and_literature_val",
+        "creator": "ceval",
+        "date": "2023/05",
+        "info": "ceval, chinese_language_and_literature, validation set"
+    },
+    "cases": [
+        {
+            "input": "英语名词“lab”(实验室)原来的形式是“laboratory”，这在词的形成方式上属于____。\nA: 直接成词\nB: 变形成词\nC: 变性成词\nD: 逆序成词",
+            "expected_answer": "D",
+            "info": "case 0"
+        },
+        {
+            "input": "音位是____。\nA: 最小的语音语义结合体\nB: 一个语音系统中能区别意义的最小语音单位\nC: 语言中最小的能区别意义的语音特征单位\nD: 语言中有区别性特征的最小语音单位",
+            "expected_answer": "B",
+            "info": "case 1"
+        },
+        {
+            "input": "下列语言中，属于印欧语系拉丁语族的语言是____。\nA: 英语\nB: 俄语\nC: 德语\nD: 法语",
+            "expected_answer": "D",
+            "info": "case 2"
+        },
+        {
+            "input": "《史记·高祖本纪》：“今则来，沛公恐不得有此。”句中“则”的用法是____。\nA: 表示承接\nB: 表示转折\nC: 表示假设\nD: 表示因果",
+            "expected_answer": "C",
+            "info": "case 3"
+        },
+        {
+            "input": "《四世同堂》中的冠晓荷是____。\nA: 老派市民的形象\nB: 革命者的形象\nC: 正直的知识分子形象\nD: 民族败类的形象",
+            "expected_answer": "D",
+            "info": "case 4"
+        },
+        {
+            "input": "“塑”这个字的音节的声母是____。\nA: sh\nB: x\nC: s\nD: 零声母",
+            "expected_answer": "C",
+            "info": "case 5"
+        },
+        {
+            "input": "《论语·述而》：“若圣与仁，则吾岂敢?抑为之不厌，诲人不倦，则可谓云尔已矣。”句中“抑”的用法是____。\nA: 表示假设\nB: 表示转折\nC: 表示原因\nD: 表示目的",
+            "expected_answer": "B",
+            "info": "case 6"
+        },
+        {
+            "input": "下列有歧义的一项是____。\nA: 进口汽车\nB: 路边种着树\nC: 洗得干净\nD: 咬死了猎人的鸡",
+            "expected_answer": "D",
+            "info": "case 7"
+        },
+        {
+            "input": "[p][p‘][b][m]四个音素的区别主要是____。\nA: 清浊\nB: 发音方法\nC: 发音部位\nD: 送气与否",
+            "expected_answer": "A",
+            "info": "case 8"
+        },
+        {
+            "input": "____是中国古代蒙学教育所采用的一种识字课本，由周兴嗣编撰而成。\nA: 《三字经》\nB: 《弟子规》\nC: 《百家姓》\nD: 《千字文》",
+            "expected_answer": "D",
+            "info": "case 9"
+        },
+        {
+            "input": "卢舍那大佛是石窟雕塑中____的代表作。\nA: 云冈石窟\nB: 龙门石窟\nC: 莫高窟\nD: 麦积山石窟",
+            "expected_answer": "B",
+            "info": "case 10"
+        },
+        {
+            "input": "目前最通用的楷书印刷体是____。\nA: 宋体\nB: 仿宋体\nC: 楷体\nD: 黑体",
+            "expected_answer": "A",
+            "info": "case 11"
+        },
+        {
+            "input": "下列句中，不属于宾语前置的是____。\nA: 姜氏何厌之有?\nB: 斥鷃笑之曰：“彼且奚适也?”\nC: 居则曰：“不吾知也!”\nD: 胡不见我于王?",
+            "expected_answer": "D",
+            "info": "case 12"
+        },
+        {
+            "input": "“员、可、乡、分、展、从”中包含的自由语素是____。\nA: 乡、分、从\nB: 可、分、展\nC: 员、乡、分\nD: 员、可、乡",
+            "expected_answer": "A",
+            "info": "case 13"
+        },
+        {
+            "input": "《杜十娘怒沉百宝箱》出自____。\nA: 《传奇》\nB: 《聊斋志异》\nC: “三言”\nD: “二拍”",
+            "expected_answer": "C",
+            "info": "case 14"
+        },
+        {
+            "input": "剧作家____被誉为“中国十六世纪的莎士比亚”。\nA: 关汉卿\nB: 白朴\nC: 汤显祖\nD: 马致远",
+            "expected_answer": "C",
+            "info": "case 15"
+        },
+        {
+            "input": "《三国志·蜀书·诸葛亮传》：“每自比于管仲、乐毅，时人莫之许也。”句中“于”的用法是____。\nA: 表对象\nB: 表比较\nC: 表原因\nD: 表施事",
+            "expected_answer": "A",
+            "info": "case 16"
+        },
+        {
+            "input": "《本草纲目》的作者是____李时珍。\nA: 南宋人\nB: 明朝人\nC: 元朝人\nD: 清朝人",
+            "expected_answer": "B",
+            "info": "case 17"
+        },
+        {
+            "input": "“我、你、他”是____。\nA: 指示代词\nB: 疑问代词\nC: 人称代词\nD: 名词",
+            "expected_answer": "C",
+            "info": "case 18"
+        },
+        {
+            "input": "关于词的本义和基本义的关系，下列表述正确的是____。\nA: 完全不一致\nB: 完全一致\nC: 本义比基本义更常用\nD: 基本义比本义更常用",
+            "expected_answer": "D",
+            "info": "case 19"
+        },
+        {
+            "input": "“现在轮到你说了”是____。\nA: 连谓句\nB: 兼语句\nC: 被动句\nD: 双宾语句",
+            "expected_answer": "B",
+            "info": "case 20"
+        },
+        {
+            "input": "“队”与“坠”是____。\nA: 古今字\nB: 异体字\nC: 通假字\nD: 繁简字",
+            "expected_answer": "A",
+            "info": "case 21"
+        },
+        {
+            "input": "d、t、n、l四个辅声的发音部位是____。\nA: 舌尖前\nB: 舌面\nC: 舌尖中\nD: 舌尖后",
+            "expected_answer": "C",
+            "info": "case 22"
+        }
+    ],
+    "formatters": [
+        {
+            "name": "default_format",
+            "definition": "function formatter(llm_response){return llm_response}",
+            "info": "do nothing"
+        },
+        {
+            "name": "extract_ABCD",
+            "definition": [
+                "function formatter(llm_response) {",
+                "    let pred = -1;",
+                "    if (!llm_response) {",
+                "        return pred;",
+                "    }",
+                "   const regex = /[A-D]\\./;",
+                "   const match = llm_response.match(regex);  ",
+                "   if (match) {  ",
+                "       pred = match[0][0];  ",
+                "       return pred;",
+                "   }",
+                "    for (let k = 0; k < 4; k++) {",
+                "        const x = String.fromCharCode(65 + k); // ASCII code for 'A' + k  ",
+                "        if (",
+                "            llm_response.includes(x + ')') ||",
+                "            llm_response.includes(x + '：') ||",
+                "            llm_response[llm_response.length - 1] === x ||",
+                "            (llm_response.length > 1 && llm_response[llm_response.length - 2] === x) ||  ",
+                "            llm_response.includes(x + '。')  ",
+                "        ) {  ",
+                "            pred = x;",
+                "            return pred;",
+                "        }  ",
+                "        if ( ",
+                "            llm_response.startsWith(x + ' ') || ",
+                "            llm_response.startsWith(x + '.') || ",
+                "            llm_response.startsWith(x + '(')  ",
+                "        ) {  ",
+                "            pred = x;  ",
+                "            return pred;  ",
+                "        }  ",
+                "    }  ",
+                "    return pred;  ",
+                "}"
+            ],
+            "info": "extract A/B/C/D if possible, else return -1"
+        }
+    ],
+    "evaluators": [
+        {
+            "name": "accuracy",
+            "definition": "function evaluator(formatted_response, expected_answer, args){if (formatted_response == expected_answer) return 1; else return 0;}",
+            "info": "exact string match"
+        },
+        {
+            "name": "likert_scale",
+            "definition": "async function evaluator(formatted_response, expected_answer, args){return await user_input(formatted_response, expected_answer, args)}",
+            "info": "human evaluation, rating from 1 to 5"
+        }
+    ],
+    "evaluation": {
+        "target_LLM": "GPT-3.5",
+        "target_formatter": "extract_ABCD",
+        "reference_type": "given",
+        "reference_LLM": "None",
+        "reference_formatter": "extract_ABCD",
+        "evaluator": "accuracy",
+        "summary": "None"
+    }
+}

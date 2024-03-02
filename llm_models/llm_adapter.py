@@ -2,9 +2,15 @@ import openai
 from openai import OpenAI
 import time
 from func_timeout import func_set_timeout
-
+import google.generativeai as genai
+import dashscope
+import configparser
 
 class LLMAdaptor:
+    def __init__(self) -> None:
+        self.config = configparser.ConfigParser()
+        self.config.read('model_config.ini')
+
     def get_response(self, prompt_text) -> str:
         pass
 
@@ -14,8 +20,10 @@ class ChatGPT35Adaptor(LLMAdaptor):
         self.model = "gpt-3.5-turbo"
         self.client = OpenAI(
             # defaults to os.environ.get("OPENAI_API_KEY")
-            api_key="",
-            base_url=""
+            # api_key="sk-4JNSmRrN990CJuayLzWp4AlJQmGhGhk9rBE6Pv1It8Ivde8f",
+            # base_url="https://api.chatanywhere.tech/v1"
+            api_key=self.config.get('GPT', 'API_KEY'),
+            base_url=self.config.get('GPT', 'BASE_URL')
         )
 
     @func_set_timeout(10)
@@ -48,9 +56,34 @@ class ChatGPT35Adaptor(LLMAdaptor):
                     response = "unknown"
         return response
 
+class GeminiAdaptor(LLMAdaptor):
+    def __init__(self) -> None:
+        super().__init__()
+        # genai.configure(api_key='AIzaSyA4ARSS4eyB38lsv2YEfgpKlR_uEJj-PNw')
+        genai.configure(api_key=self.config.get('Gemini', 'API_KEY'))
+        self.model = genai.GenerativeModel('gemini-pro')
 
+    def get_response(self, prompt_text) -> str:
+        response = self.model.generate_content(prompt_text)
+        return response.text
+
+class QWenAdaptor(LLMAdaptor):
+    def __init__(self) -> None:
+        super().__init__()        
+        # self.api_key = 'sk-20b6919235e54f529212769394e98ca4'
+        self.api_key=self.config.get('Qwen', 'API_KEY')
+        print(self.api_key)
+        dashscope.api_key = self.api_key
+        self.model = dashscope.Generation.Models.qwen_max
+
+    def get_response(self, prompt_text) -> str:
+        response = dashscope.Generation.call(
+            model = self.model,
+            prompt = prompt_text
+        )
+        return response.output.text
 
 # myChat = ChatGPT35Adaptor()
-# prompt = "Hello who are you"
+# prompt = "你是谁"
 # response = myChat.get_response(prompt)
 # print(response)

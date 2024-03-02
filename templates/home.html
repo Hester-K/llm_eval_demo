@@ -16,11 +16,23 @@
             margin: auto;
             margin-top: 100px;
         }
+        .box {
+            width: 80%; /* 调整容器的宽度 */
+            height: 40%; /* 调整容器的高度 */
+            padding: 5%;
+            margin: auto;
+            margin-top: 10%;
+            border: 2px solid #000; /* 边框宽度和颜色 */
+            border-radius: 15px; /* 圆弧边框半径，可以根据需要调整 */
+            background-color: transparent; /* 背景颜色，这里设置为透明 */
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
-    <div class="column">
+    <div class="box">
         <h1>选择或上传benchmark文件</h1>
         <hr>
         <!-- {% if message != "None"%} -->
@@ -38,6 +50,7 @@
         <br>
 
         <p>
+        新上传文件：
         <form method="POST" enctype="multipart/form-data">
             <input type="file" name="file" value="选择文件">
             <input type="submit" value="上传">
@@ -54,3 +67,4 @@ function choose_benchmark() {
     window.location.href = window.location.href + 'benchmark/' + filename;
 }
 </script>
+

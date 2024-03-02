@@ -1,0 +1,173 @@
+{
+    "basic_information": {
+        "name": "ceval_basic_medicine_val",
+        "creator": "ceval",
+        "date": "2023/05",
+        "info": "ceval, basic_medicine, validation set"
+    },
+    "cases": [
+        {
+            "input": "不属于第二信使的物质是____\nA: cAMP\nB: cGMP\nC: $IP_3$\nD: 胰岛素",
+            "expected_answer": "D",
+            "info": "case 0"
+        },
+        {
+            "input": "脱羧酶的辅酶____\nA: 生物素\nB: 叶酸\nC: 磷酸吡哆醛\nD: 硫胺素",
+            "expected_answer": "C",
+            "info": "case 1"
+        },
+        {
+            "input": "关于湿性坏疽的描述，不正确的是____\nA: 合并腐败菌感染\nB: 具有恶臭味\nC: 常有全身中毒症状\nD: 坏死组织与健康组织之间界限清楚",
+            "expected_answer": "D",
+            "info": "case 2"
+        },
+        {
+            "input": "肺梗死形成的先决条件是____\nA: 组织疏松\nB: 严重淤血\nC: 蛋白含量高\nD: 侧支循环不充分",
+            "expected_answer": "B",
+            "info": "case 3"
+        },
+        {
+            "input": "关于维生素缺乏症的叙述，不正确的是____\nA: 维生素A缺乏——夜盲症\nB: 维生素D缺乏——软骨病\nC: 维生素$B_1$ 缺乏——脚气病\nD: 维生素$B_6$缺乏——口角炎",
+            "expected_answer": "D",
+            "info": "case 4"
+        },
+        {
+            "input": "cGMP能激活____\nA: 磷脂酶C\nB: 蛋白激酶A\nC: 蛋白激酶G\nD: 酪氨酸蛋白激酶",
+            "expected_answer": "C",
+            "info": "case 5"
+        },
+        {
+            "input": "全身营养不良时，首先发生萎缩的组织或器官是____\nA: 骨骼肌\nB: 脂肪组织\nC: 肝\nD: 脑",
+            "expected_answer": "B",
+            "info": "case 6"
+        },
+        {
+            "input": "下列愈合属于完全再生的是____\nA: 神经修复\nB: 皮肤瘢痕\nC: 心梗后心肌修复\nD: 骨折愈合",
+            "expected_answer": "D",
+            "info": "case 7"
+        },
+        {
+            "input": "PCR反应中，所设计引物的长度一般为____\nA: 5～10个核苷酸\nB: 15～30个核苷酸\nC: <50个核苷酸\nD: 长度任意",
+            "expected_answer": "B",
+            "info": "case 8"
+        },
+        {
+            "input": "转氨酶的辅酶____\nA: 生物素\nB: 叶酸\nC: 磷酸吡哆醛\nD: 硫胺素",
+            "expected_answer": "C",
+            "info": "case 9"
+        },
+        {
+            "input": "下列肝细胞坏死的病变中，病毒性肝炎最常见的病理变化是____\nA: 溶解性坏死\nB: 嗜酸性坏死\nC: 点状坏死\nD: 碎片坏死",
+            "expected_answer": "A",
+            "info": "case 10"
+        },
+        {
+            "input": "肝脏在脂类代谢中所特有的作用是____\nA: 将糖转变为脂肪\nB: 由胆固醇转变为胆汁酸\nC: 生成酮体\nD: 合成磷脂",
+            "expected_answer": "C",
+            "info": "case 11"
+        },
+        {
+            "input": "导致甲状腺肿大最常见的原因是____\nA: 垂体肿瘤\nB: 缺碘\nC: 自身免疫反应\nD: 先天性疾患",
+            "expected_answer": "B",
+            "info": "case 12"
+        },
+        {
+            "input": "肝是生成尿素的唯一器官，是由于肝细胞含有____\nA: 谷氨酸脱氢酶\nB: 谷丙转氨酶\nC: 谷草转氨酶\nD: 精氨酸酶",
+            "expected_answer": "D",
+            "info": "case 13"
+        },
+        {
+            "input": "血清与血浆的区别在于血清内无____\nA: 维生素\nB: 糖类\nC: 代谢产物\nD: 纤维蛋白原",
+            "expected_answer": "D",
+            "info": "case 14"
+        },
+        {
+            "input": "可直接激活蛋白激酶C的是____\nA: cAMP\nB: cGMP\nC: $IP_3$\nD: DAG",
+            "expected_answer": "D",
+            "info": "case 15"
+        },
+        {
+            "input": "下列哪项原因不引起萎缩____\nA: 肾盂积水\nB: 慢性肝淤血\nC: 垂体功能低下\nD: 四氯化碳中毒",
+            "expected_answer": "D",
+            "info": "case 16"
+        },
+        {
+            "input": "以$IP_3$和DAG为第二信使的双信号途径是____\nA: cAMP-蛋白激酶途径\nB: $Ca^{2+}$-磷脂依赖性蛋白激酶途径\nC: cGMP-蛋白激酶途径\nD: 酪氨酸蛋白激酶途径",
+            "expected_answer": "B",
+            "info": "case 17"
+        },
+        {
+            "input": "乙型脑炎的特征性病变是____\nA: 血管淋巴套形成\nB: 软化灶形成\nC: 胶质细胞增生\nD: 卫星现象",
+            "expected_answer": "B",
+            "info": "case 18"
+        }
+    ],
+    "formatters": [
+        {
+            "name": "default_format",
+            "definition": "function formatter(llm_response){return llm_response}",
+            "info": "do nothing"
+        },
+        {
+            "name": "extract_ABCD",
+            "definition": [
+                "function formatter(llm_response) {",
+                "    let pred = -1;",
+                "    if (!llm_response) {",
+                "        return pred;",
+                "    }",
+                "   const regex = /[A-D]\\./;",
+                "   const match = llm_response.match(regex);  ",
+                "   if (match) {  ",
+                "       pred = match[0][0];  ",
+                "       return pred;",
+                "   }",
+                "    for (let k = 0; k < 4; k++) {",
+                "        const x = String.fromCharCode(65 + k); // ASCII code for 'A' + k  ",
+                "        if (",
+                "            llm_response.includes(x + ')') ||",
+                "            llm_response.includes(x + '：') ||",
+                "            llm_response[llm_response.length - 1] === x ||",
+                "            (llm_response.length > 1 && llm_response[llm_response.length - 2] === x) ||  ",
+                "            llm_response.includes(x + '。')  ",
+                "        ) {  ",
+                "            pred = x;",
+                "            return pred;",
+                "        }  ",
+                "        if ( ",
+                "            llm_response.startsWith(x + ' ') || ",
+                "            llm_response.startsWith(x + '.') || ",
+                "            llm_response.startsWith(x + '(')  ",
+                "        ) {  ",
+                "            pred = x;  ",
+                "            return pred;  ",
+                "        }  ",
+                "    }  ",
+                "    return pred;  ",
+                "}"
+            ],
+            "info": "extract A/B/C/D if possible, else return -1"
+        }
+    ],
+    "evaluators": [
+        {
+            "name": "accuracy",
+            "definition": "function evaluator(formatted_response, expected_answer, args){if (formatted_response == expected_answer) return 1; else return 0;}",
+            "info": "exact string match"
+        },
+        {
+            "name": "likert_scale",
+            "definition": "async function evaluator(formatted_response, expected_answer, args){return await user_input(formatted_response, expected_answer, args)}",
+            "info": "human evaluation, rating from 1 to 5"
+        }
+    ],
+    "evaluation": {
+        "target_LLM": "GPT-3.5",
+        "target_formatter": "extract_ABCD",
+        "reference_type": "given",
+        "reference_LLM": "None",
+        "reference_formatter": "extract_ABCD",
+        "evaluator": "accuracy",
+        "summary": "None"
+    }
+}

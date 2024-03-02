@@ -15,21 +15,53 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        .column1 {
-            width: 35%; /* Adjust as needed */
-            border: 1px solid #ccc;
-            padding: 20px;
-            max-height: 2000px;
-            box-sizing: border-box;
+        .content {
             overflow: auto;
-            overflow: scroll;
+            /* overflow: scroll; 添加垂直滚动条   */
+            scrollbar-width: thin; /* 定义滚动条的宽度 */  
+            scrollbar-color: #888888 #f2f2f2; 
+            max-height: 420px;
+        }
+        .content2 {
+            overflow: auto;
+            /* overflow: scroll; 添加垂直滚动条   */
+            scrollbar-width: thin; /* 定义滚动条的宽度 */  
+            scrollbar-color: #888888 #f2f2f2; 
+            max-height: 1460px;
+        }
+        .box1 {
+            width: 100%; /* Adjust as needed */
+            padding: 20px;
+            max-height: 500px;
+            box-sizing: border-box;
             margin-bottom: 60px;
+            border: 2px solid #000; /* 边框宽度和颜色 */
+            border-radius: 15px; /* 圆弧边框半径，可以根据需要调整 */
+            background-color: transparent; /* 背景颜色，这里设置为透明 */
+        }
+        .box2 {
+            width: 100%; /* Adjust as needed */
+            padding: 20px;
+            max-height: 1600px;
+            box-sizing: border-box;
+            margin-bottom: 60px;
+            border: 2px solid #000; /* 边框宽度和颜色 */
+            border-radius: 15px; /* 圆弧边框半径，可以根据需要调整 */
+            background-color: transparent; /* 背景颜色，这里设置为透明 */
+        }
+        .column1 {
+            width: 40%; /* Adjust as needed */
+            padding: 20px;
+            max-height: 3000px;
+            box-sizing: border-box;
+            margin-bottom: 60px;
+            background-color: transparent; /* 背景颜色，这里设置为透明 */
         }
         .column2{
             width: 60%; /* Adjust as needed */
-            border: 1px solid #ccc;
+            /* border: 1px solid #ccc; */
             padding: 20px;
-            max-height: 2000px;
+            max-height: 3000px;
             box-sizing: border-box;
             margin-bottom: 60px;
         }
@@ -47,17 +79,27 @@
             overflow: scroll;
             margin-bottom: 100px;
         }
-        .bottom-box {
+        .bottom-column {
             background-color: #fff;
-            border: 1px solid #ccc;
-            max-height: 400px;
-            overflow: auto;
-            overflow: scroll;
+            max-height: 600px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            /* border: 2px solid #000; 边框宽度和颜色 */
+        }
+        .bottom-box {
+            /* background-color: #fff; */
+            /* border: 1px solid #ccc; */
+            max-height: 500px;
+            overflow: auto;
+            /* overflow: scroll; */
+            /* position: fixed; */
+            /* bottom: 0; */
+            width: 95%;
             padding-left: 20px;
             padding-right: 20px;
+            border: 2px solid #000; /* 边框宽度和颜色 */
+            border-radius: 15px; /* 圆弧边框半径，可以根据需要调整 */
         }
         svg[id^="mermaid"] {
             min-width: 700px;
@@ -79,7 +121,7 @@
             }
           });
     </script>
-    <script>    
+    <script>
         var reference_type = "{{ evaluation.reference_type }}";
         var formatter1 = "{{ evaluation.target_formatter }}";
         var model1 = "{{ evaluation.target_LLM }}";
@@ -94,24 +136,34 @@
 <body>
     <div class="container1">
     <div class="column1">
+    <div class="box1">
     <b>Benchmark Info</b>
-    <p>Benchmark name: {{ basic_information.name }}</p> 
-    <p>Benchmark creator: {{ basic_information.creator }}</p>
-    <p>Benchmark date: {{ basic_information.date }}</p>
-    <p>Benchmark description: {{ basic_information.info }}</p>
-    <br></br>
-    
-    <b>Formatters</b>
-    {% for formatter in formatters%}
-    <p>Formatter name: {{ formatter.name }}</p>
-    <!-- <p>Formatter definition: {{ formatter.definition|safe }}</p> -->
-    <p>Formatter definition: </p>
-    <textarea style="height: 200px; width: 90%; resize:none" readonly>{{ formatter.definition|safe }}</textarea>
-    <p>Formatter info: {{ formatter.info }}</p>
-    <br></br>
-    {% endfor %}
+    <div class="content">
+        <p>Benchmark name: {{ basic_information.name }}</p> 
+        <p>Benchmark creator: {{ basic_information.creator }}</p>
+        <p>Benchmark date: {{ basic_information.date }}</p>
+        <p>Benchmark description: {{ basic_information.info }}</p>
+    </div>
+    </div>
 
+    <div class="box1">
+    <b>Formatters</b>
+    <br><br>
+    <div class="content">
+        {% for formatter in formatters%}
+        <p>Formatter name: {{ formatter.name }}</p>
+        <p>Formatter definition: </p>
+        <textarea style="height: 200px; width: 90%; resize:none" readonly>{{ formatter.definition|safe }}</textarea>
+        <p>Formatter info: {{ formatter.info }}</p>
+        <br></br>
+        {% endfor %}
+    </div>
+    </div>
+
+    <div class="box1">
     <b>Evaluators</b>
+    <br><br>
+    <div class="content">
     {% for evaluator in evaluators %}
     <p>Evaluator name: {{ evaluator.name }}</p>
     <p>Evaluator definition: </p>
@@ -119,14 +171,23 @@
     <p>Evaluator info: {{ evaluator.info }}</p>
     <br></br>
     {% endfor %}
+    </div>
+    </div>
 
+    <div class="box1">
     <b>Results</b>
+    <br><br>
+    <div class="content">
     <div id="results"></div>
-    
+    </div>
+    </div>
+
     </div>
     <div class="column2">
     <div class="container2">
-    <div class="column3">
+    <!-- <div class="column3"> -->
+    <div class="box1">
+    <div class="content">
     <form action="" method="post">
         <b>Evaluation Process</b>
         <button name="" value="">edit</button>
@@ -142,9 +203,9 @@
         A2{refence generated by another LLM?} --Y:prompt-->B2[LLM: {{ evaluation.reference_LLM }}]
         A2{refence generated by another LLM?} --N:None/Given-->D 
         B2 --raw reference-->C2[formatter: {{ evaluation.reference_formatter }}]
-        C2 --formatted response--> D
+        C2 --formatted reference--> D
         D --> E[summary]
-        linkStyle 5 color:gray,stroke:gray;
+        linkStyle 5 color:gray,stroke:gray,stroke-dasharray:10,5;
     </div>
 
     <div class="mermaid" id="diagram2">
@@ -156,23 +217,22 @@
         A2{refence generated by another LLM?} --Y:prompt-->B2[LLM: {{ evaluation.reference_LLM }}]
         A2{refence generated by another LLM?} --N:{{ evaluation.reference_type }}-->D 
         B2 --raw reference-->C2[formatter: {{ evaluation.reference_formatter }}]
-        C2 --formatted response--> D
+        C2 --formatted reference--> D
         D --> E[summary]
         style B2 fill:#e3e3e3
         style C2 fill:#e3e3e3
-        linkStyle 4,6,7 color:gray,stroke:gray;
+        linkStyle 4,6,7 color:gray,stroke:gray,stroke-dasharray:10,5;
+    </div>
     </div>
     </div>
 
-    <div class="column4">
-    <hr />
+    <div class="box2">
+    <div class="content2">
     <b>Cases</b>
     <button onclick="send_all_case()">run all</button>
 
     {% for i in range( cases|length ) %}
-    <p>
-    {{ cases[i].input }}
-    </p>
+    <p style="white-space: pre-wrap;">{{ cases[i].input}}</p>
     
     <button onclick="send_case('{{i}}', `{{cases[i].input}}`, `{{cases[i].expected_answer}}`, 'single')">run</button>
     <ul>
@@ -192,9 +252,13 @@
     </div>
     </div>
     </div>
+    </div>
 
+    <div class="bottom-column">
+    <br>
     <div class="bottom-box">
         <p id="evaluation_status">Evaluation Status</p>
+        <div class="content">
         <form id="manual_scale" style="display: none;">
         <li id="formatted_response">Formatted response: </li>
         <li id="formatted_reference">Formatted reference: </li>
@@ -205,6 +269,8 @@
             <label><input type="radio" name="scale" value="4" />4</label>
             <label><input type="radio" name="scale" value="5" />5</label>
         </form>
+    </div>
+    </div>
     </div>
 </body>
 
@@ -383,6 +449,42 @@ async function user_input(response1, response2, args) {
             })
         })
 }
+
+// 内置bleu所需的n-gram计算函数
+function countNgrams(text, n) {  
+  const words = text.split('');  
+  const ngrams = [];  
+  for (let i = 0; i < words.length - n + 1; i++) {  
+    const ngram = words.slice(i, i + n).join(' ');  
+    ngrams.push(ngram);  
+  }  
+  return ngrams;  
+}  
+
+// 内置rouge-L所需的公共序列计算
+function longestCommonSubsequence(text1, text2) {  
+  const len1 = text1.length;  
+  const len2 = text2.length;  
+
+  // 创建一个二维数组来存储最长公共子序列的长度  
+  const dp = Array.from({ length: len1 + 1 }, () => Array(len2 + 1).fill(0));  
+
+  // 填充二维数组  
+  for (let i = 1; i <= len1; i++) {  
+    for (let j = 1; j <= len2; j++) {  
+      if (text1[i - 1] === text2[j - 1]) {  
+        // 如果当前字符相等，则最长公共子序列的长度加一  
+        dp[i][j] = dp[i - 1][j - 1] + 1;  
+      } else {  
+        // 否则，取上方和左方最大值  
+        dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);  
+      }  
+    }  
+  }  
+
+  // 返回最长公共子序列的长度  
+  return dp[len1][len2];  
+}  
 
 // 更新测试结果
 function update_result(result) {

@@ -1,0 +1,183 @@
+{
+    "basic_information": {
+        "name": "ceval_middle_school_biology_val",
+        "creator": "ceval",
+        "date": "2023/05",
+        "info": "ceval, middle_school_biology, validation set"
+    },
+    "cases": [
+        {
+            "input": "运用适当的方法可以保存食品。将新鲜蘑菇制成干蘑菇采用的保存方法是____\nA: 低温冷藏\nB: 真空包装\nC: 脱水法\nD: 添加防腐剂",
+            "expected_answer": "C",
+            "info": "case 0"
+        },
+        {
+            "input": "动物能促进生态系统中的物质循环．这里的“物质循环”是指____\nA: 动物能将无机物转化为有机物\nB: 动物能将有机物转化为无机物回到自然界中\nC: 动物能为植物提供粪便，促进植物生长\nD: 动物能抑制植物的生长，保护自然界中生物的平衡",
+            "expected_answer": "B",
+            "info": "case 1"
+        },
+        {
+            "input": "保护生物多样性的最为有效是措施是____\nA: 迁地保护\nB: 就地保护\nC: 克隆\nD: 法制管理",
+            "expected_answer": "B",
+            "info": "case 2"
+        },
+        {
+            "input": "胎儿在母体内的生长发育需要营养物质和排出废物，胎儿与母体之间进行物质交换的器官是____\nA: 卵巢\nB: 输卵管\nC: 胎盘\nD: 子宫内膜",
+            "expected_answer": "C",
+            "info": "case 3"
+        },
+        {
+            "input": "下列说法正确的是____\nA: 一位妇女颅内大脑皮层上长了肿瘤导致她失明，是由于肿瘤压迫了反射孤的神经中枢\nB: 醉酒驾车极易发生交通事故，是因为酒精主要麻醉了酒驾者的脑干\nC: 赛场上选手听到发令枪声后迅速起跑属于简单反射\nD: 人体的生命活动主要受到激素调节的影响，也受到神经系统的调节",
+            "expected_answer": "D",
+            "info": "case 4"
+        },
+        {
+            "input": "裸子植物和被子植物都属于种子植物，两者之间的主要区别是____\nA: 生长环境不同\nB: 种子外面是否有果皮包被\nC: 在地球上出现的年代不同\nD: 分布的范围不同",
+            "expected_answer": "B",
+            "info": "case 5"
+        },
+        {
+            "input": "洋葱表皮细胞与人的口腔上皮细胞的区别是后者没有的是____\nA: 细胞壁\nB: 细胞膜\nC: 细胞核\nD: 细胞质",
+            "expected_answer": "A",
+            "info": "case 6"
+        },
+        {
+            "input": "《寂静的春天》是一本引发了全世界环境保护事业的书，书中描述人类可能将面临一个没有鸟、蜜蜂和蝴蝶的世界，正是这本不寻常的书，在世界范围内引起人们对野生动物的关注，唤起了人们的环境意识，动物在生物圈中具有的重要作用的是____\r\n\r\n①维持生态平衡 ②消灭病虫害 ③帮助植物传粉、传播种子 ④促进物质循环．\nA: ①②③\nB: ②③④\nC: ①③④\nD: ①②④",
+            "expected_answer": "C",
+            "info": "case 7"
+        },
+        {
+            "input": "正在结西瓜的植株，其吸收的水分主要用于____\nA: 光合作用\nB: 蒸腾作用\nC: 呼吸作用\nD: 吸收作用",
+            "expected_answer": "D",
+            "info": "case 8"
+        },
+        {
+            "input": "哈维的主要贡献是____\nA: 发现了DNA的双螺旋结构\nB: 发现了血液循环\nC: 创立了生物进化论\nD: 创立了统一的生物命名法",
+            "expected_answer": "B",
+            "info": "case 9"
+        },
+        {
+            "input": "下列关于植物的光合作用和呼吸作用的叙述正确的是____\nA: 叶绿素是绿叶进行光合作用的主要场所\nB: 低温能保鲜蔬菜、水果是因为低温能降低植物细胞的呼吸作用\nC: 绿色植物通过呼吸作用，来维持生物圈中二氧化碳和氧气的相对平衡\nD: 农业生产上要提高农作物的产量，只需加强农作物的光合作用无需考虑其呼吸作用",
+            "expected_answer": "B",
+            "info": "case 10"
+        },
+        {
+            "input": "生物体结构和功能是相适应的。下列各项中，有利于组织细胞获得氧气的是____\nA: 小肠内表面具有许多皱襞和绒毛\nB: 毛细血管壁由一层扁平上皮细胞构成\nC: 动脉血管和静脉血管内都有瓣膜\nD: 肾小球由许多毛细血管缠绕而成",
+            "expected_answer": "B",
+            "info": "case 11"
+        },
+        {
+            "input": "捕蝇草和蝇在细胞基本结构上的区别是捕蝇草的细胞中具有____\nA: 细胞质\nB: 细胞膜\nC: 细胞核\nD: 细胞壁",
+            "expected_answer": "D",
+            "info": "case 12"
+        },
+        {
+            "input": "对于病毒的认识正确的是：____\nA: 病毒对人类都是有害的，毫无利用价值\nB: 病毒一旦浸入人体，就会使人患病\nC: 病毒的个体很小，要用电子显微镜才能观察到\nD: 动物病毒也可以寄生在植物细胞里",
+            "expected_answer": "C",
+            "info": "case 13"
+        },
+        {
+            "input": "堆放时间较长的蔬菜会因产热而腐烂，与细胞产热直接相关的生理过程是____\nA: 呼吸作用\nB: 蒸腾作用\nC: 光合作用\nD: 运输作用",
+            "expected_answer": "A",
+            "info": "case 14"
+        },
+        {
+            "input": "果酒的制作需要____\nA: 酵母菌\nB: 乳酸菌\nC: 霉菌\nD: 醋酸菌",
+            "expected_answer": "A",
+            "info": "case 15"
+        },
+        {
+            "input": "“植物人”有心眺、呼吸，不能自主活动、无意识，可确定神经系统受到损伤的是____\nA: 大脑\nB: 小脑\nC: 脑干\nD: 脊髄",
+            "expected_answer": "C",
+            "info": "case 16"
+        },
+        {
+            "input": "在紧急情况下，壁虎的尾巴能自动断落，断落部分还能做屈曲运动。蜥蜴的这种行为是动物的____\nA: 攻击行为\nB: 繁殖行为\nC: 社会行为\nD: 防御行为",
+            "expected_answer": "D",
+            "info": "case 17"
+        },
+        {
+            "input": "下列有关动物的形态结构与生活环境相适应的叙述错误的是____\nA: 家鸽前肢变成翼，适于在空中飞翔\nB: 野兔神经系统发达，能迅速发现并躲避天敌\nC: 鲫鱼身体呈纺锤形，用鳃呼吸，适于在水中生活\nD: 蚯蚓生活在土壤中，依靠肺进行呼吸",
+            "expected_answer": "D",
+            "info": "case 18"
+        },
+        {
+            "input": "以下有关达尔文自然选择学说的叙述，不正确的是____\nA: 这种生物普遍都具有很强的繁殖能力\nB: 生物要生存下去，就得为了获得食物和空间而进行生存斗争\nC: 自然选择保留的变异永远都有利于该生物的生存\nD: 不适应环境的生物将被淘汰",
+            "expected_answer": "C",
+            "info": "case 19"
+        },
+        {
+            "input": "下列有关生命的起源和进化的叙述，不正确的是____\nA: 生命起源于原始陆地\nB: 化石是研究生物进化的最直接证据\nC: 米勒实验说明原始地球条件下无机小分子形成有机小分子是可能的\nD: 原始生命诞生的标志是能从外界获取营养并排出代谢废物，能进行生长和繁殖等",
+            "expected_answer": "A",
+            "info": "case 20"
+        }
+    ],
+    "formatters": [
+        {
+            "name": "default_format",
+            "definition": "function formatter(llm_response){return llm_response}",
+            "info": "do nothing"
+        },
+        {
+            "name": "extract_ABCD",
+            "definition": [
+                "function formatter(llm_response) {",
+                "    let pred = -1;",
+                "    if (!llm_response) {",
+                "        return pred;",
+                "    }",
+                "   const regex = /[A-D]\\./;",
+                "   const match = llm_response.match(regex);  ",
+                "   if (match) {  ",
+                "       pred = match[0][0];  ",
+                "       return pred;",
+                "   }",
+                "    for (let k = 0; k < 4; k++) {",
+                "        const x = String.fromCharCode(65 + k); // ASCII code for 'A' + k  ",
+                "        if (",
+                "            llm_response.includes(x + ')') ||",
+                "            llm_response.includes(x + '：') ||",
+                "            llm_response[llm_response.length - 1] === x ||",
+                "            (llm_response.length > 1 && llm_response[llm_response.length - 2] === x) ||  ",
+                "            llm_response.includes(x + '。')  ",
+                "        ) {  ",
+                "            pred = x;",
+                "            return pred;",
+                "        }  ",
+                "        if ( ",
+                "            llm_response.startsWith(x + ' ') || ",
+                "            llm_response.startsWith(x + '.') || ",
+                "            llm_response.startsWith(x + '(')  ",
+                "        ) {  ",
+                "            pred = x;  ",
+                "            return pred;  ",
+                "        }  ",
+                "    }  ",
+                "    return pred;  ",
+                "}"
+            ],
+            "info": "extract A/B/C/D if possible, else return -1"
+        }
+    ],
+    "evaluators": [
+        {
+            "name": "accuracy",
+            "definition": "function evaluator(formatted_response, expected_answer, args){if (formatted_response == expected_answer) return 1; else return 0;}",
+            "info": "exact string match"
+        },
+        {
+            "name": "likert_scale",
+            "definition": "async function evaluator(formatted_response, expected_answer, args){return await user_input(formatted_response, expected_answer, args)}",
+            "info": "human evaluation, rating from 1 to 5"
+        }
+    ],
+    "evaluation": {
+        "target_LLM": "GPT-3.5",
+        "target_formatter": "extract_ABCD",
+        "reference_type": "given",
+        "reference_LLM": "None",
+        "reference_formatter": "extract_ABCD",
+        "evaluator": "accuracy",
+        "summary": "None"
+    }
+}

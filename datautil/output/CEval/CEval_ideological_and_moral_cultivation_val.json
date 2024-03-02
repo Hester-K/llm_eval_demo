@@ -1,0 +1,173 @@
+{
+    "basic_information": {
+        "name": "ceval_ideological_and_moral_cultivation_val",
+        "creator": "ceval",
+        "date": "2023/05",
+        "info": "ceval, ideological_and_moral_cultivation, validation set"
+    },
+    "cases": [
+        {
+            "input": "一般来说，一个人对社会的贡献越大，他的____\nA: 社会地位就越高\nB: 个人价值就越高\nC: 社会价值就越高\nD: 自我完善就越高",
+            "expected_answer": "C",
+            "info": "case 0"
+        },
+        {
+            "input": "我国森林法把每年____定为全国统一的“植树节”\nA: 44990\nB: 44996\nC: 44997\nD: 45000",
+            "expected_answer": "C",
+            "info": "case 1"
+        },
+        {
+            "input": "爱国主义包含着情感、思想、行为三个方面，其中____是灵魂\nA: 情感\nB: 思想\nC: 行为\nD: 意志",
+            "expected_answer": "B",
+            "info": "case 2"
+        },
+        {
+            "input": "实现人生价值的根本途径是____\nA: 培养正确的人生态度\nB: 自觉提高自我的主体素质和能力\nC: 进行有意识、有目的的创造性实践活动\nD: 选择与社会主导价值观相一致的人生价值目标",
+            "expected_answer": "C",
+            "info": "case 3"
+        },
+        {
+            "input": "人生不仅仅是一个自然过程，还包含着极为丰富的____\nA: 社会存在\nB: 社会内容\nC: 社会过程\nD: 社会关系",
+            "expected_answer": "B",
+            "info": "case 4"
+        },
+        {
+            "input": "人才素质的灵魂是____\nA: 德\nB: 智\nC: 体\nD: 美",
+            "expected_answer": "A",
+            "info": "case 5"
+        },
+        {
+            "input": "人生观的核心____\nA: 人生价值\nB: 人生目的\nC: 人生态度\nD: 人生信仰",
+            "expected_answer": "B",
+            "info": "case 6"
+        },
+        {
+            "input": "社会主义经过长期的发展，在高度发达的基础上最终会转变为____\nA: 资本主义社会\nB: 共产主义社会\nC: 帝国主义\nD: 垄断主义",
+            "expected_answer": "B",
+            "info": "case 7"
+        },
+        {
+            "input": "科学发展观的本质和核心是____\nA: 全面发展\nB: 协调发展\nC: 统筹发展\nD: 以人为本",
+            "expected_answer": "D",
+            "info": "case 8"
+        },
+        {
+            "input": "现代人才综合素质的灵魂是____\nA: 人才的思想道德素质\nB: 人才的文化素质\nC: 人才的心理素质\nD: 人才的身体素质",
+            "expected_answer": "A",
+            "info": "case 9"
+        },
+        {
+            "input": "下列关于人的社会关系与自然关系的表述错误的是____\nA: 人在与自然发生关系的过程中结成了社会关系\nB: 人与人的社会关系极大地影响着人与自然的关系\nC: 自然关系是社会关系的基础，社会关系是自然关系的延伸\nD: 协调好人与自然的关系，就需要协调好人与人之间的社会关系",
+            "expected_answer": "C",
+            "info": "case 10"
+        },
+        {
+            "input": "社会主义荣誉观是____的重要组成部分\nA: 科学发展观\nB: 马克思注意历史观\nC: 马克思主义世界观\nD: 社会主义道德观",
+            "expected_answer": "D",
+            "info": "case 11"
+        },
+        {
+            "input": "人生的自我价值,是指____\nA: 人对自然界的利用和改造\nB: 人对社会和他人所作的贡献\nC: 个体的人生活动对社会、他人所具有价值\nD: 个体的人生活动对自己生存和发展所具有的价值",
+            "expected_answer": "D",
+            "info": "case 12"
+        },
+        {
+            "input": "人生目的主要回答____\nA: 人为什么活着\nB: 世界本源是什么\nC: 人应怎样对待生活\nD: 怎样的人生才有意义",
+            "expected_answer": "A",
+            "info": "case 13"
+        },
+        {
+            "input": "马克思主义理想信念的基础是____\nA: 信仰\nB: 科学\nC: 坚定\nD: 革命",
+            "expected_answer": "B",
+            "info": "case 14"
+        },
+        {
+            "input": "理想，是人们在实践中形成的，具有____的对美好未来的追求和向往，是人们的政治立场和世界观在人生奋斗目标上的体现。\nA: 实现必然性\nB: 不可实现性\nC: 超越客观性\nD: 实现可能性",
+            "expected_answer": "D",
+            "info": "case 15"
+        },
+        {
+            "input": "在当今时代任何一个具有爱国情怀的人，都应大力弘扬以____为核心的时代精神。\nA: 解放思想\nB: 改革创新\nC: 自强不息\nD: 出国深造",
+            "expected_answer": "B",
+            "info": "case 16"
+        },
+        {
+            "input": "我国社会主义法律的本质特征表现为____的统一。\nA: 阶级性和人民性\nB: 强制性和惩罚性\nC: 教育性和阶级性\nD: 教育性和强制性",
+            "expected_answer": "A",
+            "info": "case 17"
+        },
+        {
+            "input": "一个人社会价值的实质是____\nA: 贡献\nB: 成功\nC: 劳动\nD: 创造",
+            "expected_answer": "A",
+            "info": "case 18"
+        }
+    ],
+    "formatters": [
+        {
+            "name": "default_format",
+            "definition": "function formatter(llm_response){return llm_response}",
+            "info": "do nothing"
+        },
+        {
+            "name": "extract_ABCD",
+            "definition": [
+                "function formatter(llm_response) {",
+                "    let pred = -1;",
+                "    if (!llm_response) {",
+                "        return pred;",
+                "    }",
+                "   const regex = /[A-D]\\./;",
+                "   const match = llm_response.match(regex);  ",
+                "   if (match) {  ",
+                "       pred = match[0][0];  ",
+                "       return pred;",
+                "   }",
+                "    for (let k = 0; k < 4; k++) {",
+                "        const x = String.fromCharCode(65 + k); // ASCII code for 'A' + k  ",
+                "        if (",
+                "            llm_response.includes(x + ')') ||",
+                "            llm_response.includes(x + '：') ||",
+                "            llm_response[llm_response.length - 1] === x ||",
+                "            (llm_response.length > 1 && llm_response[llm_response.length - 2] === x) ||  ",
+                "            llm_response.includes(x + '。')  ",
+                "        ) {  ",
+                "            pred = x;",
+                "            return pred;",
+                "        }  ",
+                "        if ( ",
+                "            llm_response.startsWith(x + ' ') || ",
+                "            llm_response.startsWith(x + '.') || ",
+                "            llm_response.startsWith(x + '(')  ",
+                "        ) {  ",
+                "            pred = x;  ",
+                "            return pred;  ",
+                "        }  ",
+                "    }  ",
+                "    return pred;  ",
+                "}"
+            ],
+            "info": "extract A/B/C/D if possible, else return -1"
+        }
+    ],
+    "evaluators": [
+        {
+            "name": "accuracy",
+            "definition": "function evaluator(formatted_response, expected_answer, args){if (formatted_response == expected_answer) return 1; else return 0;}",
+            "info": "exact string match"
+        },
+        {
+            "name": "likert_scale",
+            "definition": "async function evaluator(formatted_response, expected_answer, args){return await user_input(formatted_response, expected_answer, args)}",
+            "info": "human evaluation, rating from 1 to 5"
+        }
+    ],
+    "evaluation": {
+        "target_LLM": "GPT-3.5",
+        "target_formatter": "extract_ABCD",
+        "reference_type": "given",
+        "reference_LLM": "None",
+        "reference_formatter": "extract_ABCD",
+        "evaluator": "accuracy",
+        "summary": "None"
+    }
+}

@@ -1,0 +1,223 @@
+{
+    "basic_information": {
+        "name": "ceval_professional_tour_guide_val",
+        "creator": "ceval",
+        "date": "2023/05",
+        "info": "ceval, professional_tour_guide, validation set"
+    },
+    "cases": [
+        {
+            "input": "《临川先生文集》中的“王临川”用的是____称谓。\nA: 别号\nB: 官爵\nC: 地望\nD: 排行",
+            "expected_answer": "C",
+            "info": "case 0"
+        },
+        {
+            "input": "广东风味小吃有____。\nA: 猫耳朵\nB: 五芳斋粽子\nC: 双皮奶\nD: 虾爆鳝面",
+            "expected_answer": "C",
+            "info": "case 1"
+        },
+        {
+            "input": "我国国内卫星通信网正式建成于____。\nA: 1980年\nB: 1983年\nC: 1986年\nD: 1988年",
+            "expected_answer": "C",
+            "info": "case 2"
+        },
+        {
+            "input": "东汉由西汉王室刘秀创建，建都____。\nA: 长安\nB: 洛阳\nC: 成都\nD: 建业",
+            "expected_answer": "B",
+            "info": "case 3"
+        },
+        {
+            "input": "对我国名山的描述正确的是____。\nA: 泰山有“天下第一山”之称，被列入世界自然与文化双重遗产\nB: 黄山有“五岳独秀”之称，被列入世界自然与文化双重遗产\nC: 华山最高峰南峰海拔1800米，自古以险闻名遐迩\nD: 衡山有七十二峰，三大主峰莲花峰、天都峰、祝融峰都超过1800米",
+            "expected_answer": "A",
+            "info": "case 4"
+        },
+        {
+            "input": "中国历史上第一个奴隶制国家政权夏朝建立在____。\nA: 晋南\nB: 洛阳\nC: 安阳\nD: 二里岗",
+            "expected_answer": "A",
+            "info": "case 5"
+        },
+        {
+            "input": "上海豫园鱼乐榭有一上实下空的墙，遮挡了原来流水较近的短处，产生了源远流长的效果，这是____的神来之笔。\nA: 抑景\nB: 框景\nC: 借景\nD: 障景",
+            "expected_answer": "D",
+            "info": "case 6"
+        },
+        {
+            "input": "“霸王别姬”是____的代表菜。\nA: 苏菜\nB: 鲁菜\nC: 浙菜\nD: 湘菜",
+            "expected_answer": "A",
+            "info": "case 7"
+        },
+        {
+            "input": "我国的“四大名砚”中，唯一不用岩石为砚材制作原料的是____。\nA: 端砚\nB: 歙砚\nC: 澄泥砚\nD: 洮河砚",
+            "expected_answer": "C",
+            "info": "case 8"
+        },
+        {
+            "input": "黑龙江在我国境内的最长支流是____。\nA: 松花江\nB: 海河\nC: 鸭绿江\nD: 辽河",
+            "expected_answer": "A",
+            "info": "case 9"
+        },
+        {
+            "input": "西周时的商高是见于著述的中国古代第一位____。\nA: 农学家\nB: 医学家\nC: 数学家\nD: 天文学家",
+            "expected_answer": "C",
+            "info": "case 10"
+        },
+        {
+            "input": "被誉为“四大国宝”的我国一级保护动物是____。\nA: 藏羚羊、白唇鹿、白鳍豚、金丝猴\nB: 华南虎、白鳍豚、亚洲象、大熊猫\nC: 大熊猫、金丝猴、白鳍豚、白唇鹿\nD: 金丝猴、东北虎、白唇鹿、亚洲象",
+            "expected_answer": "C",
+            "info": "case 11"
+        },
+        {
+            "input": "英国为了打开中国市场，在____发动了鸦片战争，清朝战败。\nA: 1780年\nB: 1820年\nC: 1840年\nD: 1860年",
+            "expected_answer": "C",
+            "info": "case 12"
+        },
+        {
+            "input": "我国现存最古老的木结构建筑位于____。\nA: 山西五台县南禅寺\nB: 山西五台县佛光寺\nC: 山西五台县塔院寺\nD: 山西芮城县广仁王庙",
+            "expected_answer": "A",
+            "info": "case 13"
+        },
+        {
+            "input": "____是伦敦的标志性建筑之一，有英国最大的钟。\nA: 伦敦塔桥\nB: 伊丽莎白塔\nC: 圣保罗教堂\nD: 海德公园",
+            "expected_answer": "B",
+            "info": "case 14"
+        },
+        {
+            "input": "无锡寄畅园因园外惠山的景色而显得更加秀丽。产生这一效果的构景手法是____。\nA: 借景\nB: 添景\nC: 抑景\nD: 障景",
+            "expected_answer": "A",
+            "info": "case 15"
+        },
+        {
+            "input": "世界旅游组织总部设在____。\nA: 旧金山\nB: 曼谷\nC: 海牙\nD: 马德里",
+            "expected_answer": "D",
+            "info": "case 16"
+        },
+        {
+            "input": "《梦溪笔谈》被称为“中国科学史上的坐标”，其作者是____。\nA: 沈括\nB: 祖冲之\nC: 徐霞客\nD: 吴敬梓",
+            "expected_answer": "A",
+            "info": "case 17"
+        },
+        {
+            "input": "北方园林尤以____为代表。\nA: 开封\nB: 西安\nC: 洛阳\nD: 北京",
+            "expected_answer": "D",
+            "info": "case 18"
+        },
+        {
+            "input": "我国成功发射的世界首颗量子科学实验卫星叫____。\nA: “墨子号”\nB: “玉兔号”\nC: “嫦娥号”\nD: “天宫号”",
+            "expected_answer": "A",
+            "info": "case 19"
+        },
+        {
+            "input": "我国最大的丛书是____。\nA: 《吕氏春秋》\nB: 《永乐大典》\nC: 《古今图书集成》\nD: 《四库全书》",
+            "expected_answer": "D",
+            "info": "case 20"
+        },
+        {
+            "input": "郁金香真正的原产地是____。\nA: 荷兰\nB: 土耳其\nC: 法国\nD: 意大利",
+            "expected_answer": "B",
+            "info": "case 21"
+        },
+        {
+            "input": "清乾隆年间“四大徽班进京”对京剧艺术的形成影响深远，四大徽班中最早进京演出并大获成功的是____。\nA: 和春班\nB: 四喜班\nC: 三庆班\nD: 春台班",
+            "expected_answer": "C",
+            "info": "case 22"
+        },
+        {
+            "input": "李求真在“万里晴空，几片闲云浮海角；一湾碧水，八方游子恋天涯”联语中巧妙地嵌入了“海角天涯”四个字，它是____省的旅游名胜。\nA: 广东\nB: 广西\nC: 贵州\nD: 海南",
+            "expected_answer": "D",
+            "info": "case 23"
+        },
+        {
+            "input": "下列园林建筑中，____形式优美且不讲究对称布局。\nA: 榭\nB: 轩\nC: 亭\nD: 廊",
+            "expected_answer": "B",
+            "info": "case 24"
+        },
+        {
+            "input": "元大都是按照____传统都城的布局建造的。\nA: 汉族\nB: 藏族\nC: 蒙古族\nD: 满族",
+            "expected_answer": "A",
+            "info": "case 25"
+        },
+        {
+            "input": "被称为“土族梁祝”的叙事长诗是____。\nA: 《牛达的传说》\nB: 《汗庆格尔》\nC: 《祁家延西》\nD: 《拉仁布与吉门索》",
+            "expected_answer": "D",
+            "info": "case 26"
+        },
+        {
+            "input": "下列风物特产中，属于韩国风物特产的是____。\nA: 珍珠\nB: 燕窝\nC: 高丽参\nD: 香料",
+            "expected_answer": "C",
+            "info": "case 27"
+        },
+        {
+            "input": "西汉的____，包括《素问》和《灵枢》两部分，奠定了传统中医学理论基础，是我国现存最早的一部医书。\nA: 《黄帝内经》\nB: 《伤寒杂病论》\nC: 《脉经》\nD: 《千金方》",
+            "expected_answer": "A",
+            "info": "case 28"
+        }
+    ],
+    "formatters": [
+        {
+            "name": "default_format",
+            "definition": "function formatter(llm_response){return llm_response}",
+            "info": "do nothing"
+        },
+        {
+            "name": "extract_ABCD",
+            "definition": [
+                "function formatter(llm_response) {",
+                "    let pred = -1;",
+                "    if (!llm_response) {",
+                "        return pred;",
+                "    }",
+                "   const regex = /[A-D]\\./;",
+                "   const match = llm_response.match(regex);  ",
+                "   if (match) {  ",
+                "       pred = match[0][0];  ",
+                "       return pred;",
+                "   }",
+                "    for (let k = 0; k < 4; k++) {",
+                "        const x = String.fromCharCode(65 + k); // ASCII code for 'A' + k  ",
+                "        if (",
+                "            llm_response.includes(x + ')') ||",
+                "            llm_response.includes(x + '：') ||",
+                "            llm_response[llm_response.length - 1] === x ||",
+                "            (llm_response.length > 1 && llm_response[llm_response.length - 2] === x) ||  ",
+                "            llm_response.includes(x + '。')  ",
+                "        ) {  ",
+                "            pred = x;",
+                "            return pred;",
+                "        }  ",
+                "        if ( ",
+                "            llm_response.startsWith(x + ' ') || ",
+                "            llm_response.startsWith(x + '.') || ",
+                "            llm_response.startsWith(x + '(')  ",
+                "        ) {  ",
+                "            pred = x;  ",
+                "            return pred;  ",
+                "        }  ",
+                "    }  ",
+                "    return pred;  ",
+                "}"
+            ],
+            "info": "extract A/B/C/D if possible, else return -1"
+        }
+    ],
+    "evaluators": [
+        {
+            "name": "accuracy",
+            "definition": "function evaluator(formatted_response, expected_answer, args){if (formatted_response == expected_answer) return 1; else return 0;}",
+            "info": "exact string match"
+        },
+        {
+            "name": "likert_scale",
+            "definition": "async function evaluator(formatted_response, expected_answer, args){return await user_input(formatted_response, expected_answer, args)}",
+            "info": "human evaluation, rating from 1 to 5"
+        }
+    ],
+    "evaluation": {
+        "target_LLM": "GPT-3.5",
+        "target_formatter": "extract_ABCD",
+        "reference_type": "given",
+        "reference_LLM": "None",
+        "reference_formatter": "extract_ABCD",
+        "evaluator": "accuracy",
+        "summary": "None"
+    }
+}
