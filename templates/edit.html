@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=""en>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{{basic_information.name}}</title>
@@ -9,7 +9,6 @@
             display: flex;
             justify-content: space-between;
         }
-
         .box1 {
             width: 100%; /* Adjust as needed */
             padding: 20px;
@@ -23,11 +22,12 @@
         .column {
             width: 90%; /* Adjust as needed */
             /* border: 1px solid #ccc; */
-            padding: 20px;
+            padding-left: 5%;
+            padding-top: 2%;
             box-sizing: border-box;
         }
         svg[id^="mermaid"] {
-            min-width: 600px;
+            min-width: 95%;
             min-height: 200px;
             font-size: 12px;
         }
@@ -35,6 +35,14 @@
             width: 80%;
         }
     </style>
+    <link href="{{ url_for('static', filename='prism.css')}}" rel="stylesheet">
+    <style>  
+        pre code.language-javascript {  
+            /* font-family: "Courier New", Courier, monospace; 设置字体   */
+            font-size: 12px; /* 设置字体大小 */  
+        }  
+    </style>
+    <script src="{{ url_for('static', filename='prism.js') }}" async></script>
     <script>    
         var filename = "{{ filename|safe }}";
         var reference_type = "{{ evaluation.reference_type }}";
@@ -162,32 +170,48 @@
     </div>
 
     <button onclick="save_eval()">save and refresh</button>
-    <button onclick="return_to_benchmark()">return</button> 
+    <button onclick="return_to_benchmark()">return</button>
 
     </div>
 
     <div class="box1">
     <b>Formatters</b>
+    <br><br>
     {% for formatter in formatters%}
+    <hr />
     <p>Formatter name: {{ formatter.name }}</p>
     <!-- <p>Formatter definition: {{ formatter.definition|safe }}</p> -->
     <p>Formatter definition: </p>
-    <textarea style="height: 200px; width: 500px; resize:none" readonly>{{ formatter.definition|safe }}</textarea>
+    <!-- <textarea style="height: 200px; width: 500px; resize:none" readonly>{{ formatter.definition|safe }}</textarea> -->
+    <div style="width: 98%; overflow:visible; display: inline-block;">
+        <pre><code class="language-javascript">{{ formatter.definition|safe }}</code></pre>
+    </div>
     <p>Formatter info: {{ formatter.info }}</p>
-    <br></br>
     {% endfor %}
     </div>
 
     <div class="box1">
     <b>Evaluators</b>
+    <br><br>
     {% for evaluator in evaluators %}
+    <hr />
     <p>Evaluator name: {{ evaluator.name }}</p>
     <p>Evaluator definition: </p>
-    <textarea style="height: 200px; width: 500px; resize:none" readonly>{{ evaluator.definition|safe }}</textarea>
+    <div style="width: 98%; overflow:visible; display: inline-block;">
+        <pre><code class="language-javascript">{{ evaluator.definition|safe }}</code></pre>
+    </div>
+    <!-- <textarea style="height: 200px; width: 500px; resize:none" readonly>{{ evaluator.definition|safe }}</textarea> -->
     <p>Evaluator info: {{ evaluator.info }}</p>
-    <br></br>
     {% endfor %}
 
+    </div>
+
+    <div class="box1">
+        <b>Results</b>
+        <br><br>
+        {% for result in results%}
+        <p>{{ result.result }}</p>
+        {% endfor %}
     </div>
 
     </div>
@@ -220,10 +244,6 @@
 </script>
 
 <script>
-
-</script>
-
-<script>
 // 读取初始配置
 function initChoiceById(id, value) {
     var dropdown = document.getElementById(id);
@@ -234,7 +254,8 @@ function initChoiceById(id, value) {
     choice.setAttribute('selected', 'selected');
 }
 
-window.onload = function() {
+// window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     if ('{{ evaluation.reference_type }}'=='Generated') {
         document.getElementById('diagram2').style.display = 'none';
@@ -253,6 +274,19 @@ window.onload = function() {
     initChoiceById("evaluator", "{{ evaluation.evaluator }}");
 
     handle_change();
+});
+
+function return_to_benchmark() {
+    fetch('/benchmark/{{ filename }}/return_to_benchmark', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({})
+        })
+        .then(response => {
+            window.location.href = '/benchmark/{{ filename }}';
+        });
 }
 
 // 保存测试配置，刷新
@@ -282,10 +316,6 @@ function save_eval() {
     location.reload();
 }
 
-function return_to_benchmark() {
-    window.location.href = window.location.href;
-}
-
 // 实时更新流程图配置部分，无关的配置不予显示
 function handle_change() {
     reference_type = document.getElementById("reference_type").value;
@@ -298,6 +328,7 @@ function handle_change() {
         document.getElementById('select_model2').style.display = 'block';
         document.getElementById('select_fmt2').style.display = 'block';
     }
+
 }
 
 </script>

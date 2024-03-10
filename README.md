@@ -14,11 +14,11 @@
 
 以C-EVAL Benchmark为例，选择Given参考答案类型，以精度作为评估指标，测试流程图如下所示，黑色实线箭头既对于选择测试路径。
 
-![](readme_assets\sample-flowchart.jpg)
+![](https://github.com/Hester-K/llm_eval_demo/blob/master/readme_assets/sample-flowchart.jpg)
 
 #### Benchmark文件组织格式
 
-将Benchmark内容按照基本信息、测试用例、测试程序、测试配置四个部分组织为单个JSON文件，如[SafetyBench dev集文件](datautil\output\SafetyBench_dev.json)
+将Benchmark内容按照基本信息、测试用例、测试程序、测试配置四个部分组织为单个JSON文件，如[SafetyBench dev集文件](https://github.com/Hester-K/llm_eval_demo/blob/master/datautil/output/SafetyBench_dev.json)
 
 #### 支撑运行系统
 
