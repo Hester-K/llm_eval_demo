@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, jsonify, url_for, redirect, session
+from flask import Blueprint, render_template, request, url_for, redirect, session
 import json
 from llm_models import get_llms
 
@@ -28,23 +28,6 @@ def display_benchmark(filename):
 def benchmark_page():
     return redirect(url_for('home_api.home_page', message='未选择文件'))
 
-# @benchmark_api.route('/benchmark/<filename>', methods=['POST'])
-# def edit_benchmark(filename):
-#     filepath = 'upload\\' + filename
-#     with open(filepath, 'r', encoding='utf-8') as fp:
-#         bench_data = json.load(fp)
-#     for func in bench_data['formatters']:
-#         if type(func['definition'])==list:
-#             func['definition'] = '\n'.join(func['definition'])
-#         func['definition'] = func['definition'].replace('formatter', func['name'], 1)
-#     for func in bench_data['evaluators']:
-#         if type(func['definition'])==list:
-#             func['definition'] = '\n'.join(func['definition'])
-#         func['definition'] = func['definition'].replace('evaluator', func['name'], 1)
-#     bench_data['filename'] = filename
-#     bench_data['llms'] = get_llms()
-#     return render_template("edit.html", template_folder="templates", **bench_data)
-
 @benchmark_api.route('/benchmark/<filename>/edit')
 def edit_benchmark(filename):
     filepath = 'upload\\' + filename
@@ -62,7 +45,6 @@ def edit_benchmark(filename):
     bench_data['filename'] = filename
     bench_data['llms'] = get_llms()
     bench_data['results'] = session['{}_results'.format(filename)]
-    # print('edit')
     return render_template("edit.html", template_folder="templates", **bench_data)
 
 @benchmark_api.route('/benchmark/<filename>/jump_to_edit', methods=['POST'])

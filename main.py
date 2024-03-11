@@ -11,5 +11,4 @@ app.register_blueprint(benchmark_api)
 app.register_blueprint(util_api)
 
 if __name__=="__main__":
-    app.run(debug=True)
-    # app.run()
+    app.run()

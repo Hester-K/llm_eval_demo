@@ -1,6 +1,4 @@
-import numpy as np
 from .llm_adapter import *
-import time
 
 def get_llms():
     llms = [

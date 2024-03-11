@@ -18,9 +18,7 @@ class SafetyBench(EvalDataset):
 
         for feature in features:
             cur_column = self.data[feature]
-            # print(cur_column)
             for i in range(len(cur_column)):
-                # print(cur_column[i])
                 cur_input, cur_answer, cur_info = self.formalize_data(cur_column[i], i, feature)
                 cur_case = {
                     "input": cur_input,

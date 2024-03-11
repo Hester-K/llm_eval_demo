@@ -1,5 +1,3 @@
-import json
-from datasets import load_dataset
 from EvalDataset import EvalDataset
 
 class CEval(EvalDataset):
@@ -16,15 +14,6 @@ class CEval(EvalDataset):
         answer = cur_features[6]
         info = 'case {}'.format(id)
         return prompt, answer, info
-
-
-
-# aaa = CEval('ceval/ceval-exam', 'computer_network', 'val')
-# aaa.get_dataset_subset()
-# aaa.format_basic_information('ceval-computer-network-val', 'ceval', '2023/05', 'ceval, computer network, validation set')
-# aaa.format_cases()
-# aaa.format_others()
-# aaa.subset_to_json('CEval1')
 
 subsets = [
     "computer_network",

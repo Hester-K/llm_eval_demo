@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <title>{{basic_information.name}}</title>
     <style>
-        /* Apply basic styles for columns */
         .container {
             display: flex;
             justify-content: space-between;
         }
         .box1 {
-            width: 100%; /* Adjust as needed */
+            width: 100%;
             padding: 20px;
-            /* max-height: 500px; */
             box-sizing: border-box;
             margin-bottom: 60px;
-            border: 2px solid #000; /* 边框宽度和颜色 */
-            border-radius: 15px; /* 圆弧边框半径，可以根据需要调整 */
-            background-color: transparent; /* 背景颜色，这里设置为透明 */
+            border: 2px solid #000; 
+            border-radius: 15px; 
+            background-color: transparent; 
         }
         .column {
-            width: 90%; /* Adjust as needed */
-            /* border: 1px solid #ccc; */
+            width: 90%; 
             padding-left: 5%;
             padding-top: 2%;
             box-sizing: border-box;
@@ -38,8 +35,7 @@
     <link href="{{ url_for('static', filename='prism.css')}}" rel="stylesheet">
     <style>  
         pre code.language-javascript {  
-            /* font-family: "Courier New", Courier, monospace; 设置字体   */
-            font-size: 12px; /* 设置字体大小 */  
+            font-size: 12px; 
         }  
     </style>
     <script src="{{ url_for('static', filename='prism.js') }}" async></script>
@@ -53,7 +49,6 @@
         var evaluator = "{{ evaluation.evaluator }}";
         var current_formatted_response = "";
         var current_formatted_reference = "";
-        var results = Array();
     </script>
 </head>
 
@@ -131,8 +126,6 @@
         {% for llm in llms %}
             <option value="{{llm}}">{{llm}}</option>
         {% endfor %}
-        <!-- <option value="random">random</option>
-        <option value="GPT-3.5">GPT-3.5</option> -->
     </select>
     <hr />   
     </div> 
@@ -143,8 +136,6 @@
         {% for llm in llms %}
             <option value="{{llm}}">{{llm}}</option>
         {% endfor %}
-        <!-- <option value="random">random</option>
-        <option value="GPT-3.5">GPT-3.5</option> -->
     </select>
     <hr />
     </div>
@@ -180,9 +171,7 @@
     {% for formatter in formatters%}
     <hr />
     <p>Formatter name: {{ formatter.name }}</p>
-    <!-- <p>Formatter definition: {{ formatter.definition|safe }}</p> -->
     <p>Formatter definition: </p>
-    <!-- <textarea style="height: 200px; width: 500px; resize:none" readonly>{{ formatter.definition|safe }}</textarea> -->
     <div style="width: 98%; overflow:visible; display: inline-block;">
         <pre><code class="language-javascript">{{ formatter.definition|safe }}</code></pre>
     </div>
@@ -200,7 +189,6 @@
     <div style="width: 98%; overflow:visible; display: inline-block;">
         <pre><code class="language-javascript">{{ evaluator.definition|safe }}</code></pre>
     </div>
-    <!-- <textarea style="height: 200px; width: 500px; resize:none" readonly>{{ evaluator.definition|safe }}</textarea> -->
     <p>Evaluator info: {{ evaluator.info }}</p>
     {% endfor %}
 
@@ -218,9 +206,6 @@
 </body>
 
 {% for formatter in formatters %}
-<!-- <script id="formatter_{{formatter.name}}">
-    {{ formatter.definition|safe}}
-</script> -->
 <script>
     {{ formatter.definition|safe }}
 </script>
@@ -244,7 +229,6 @@
 </script>
 
 <script>
-// 读取初始配置
 function initChoiceById(id, value) {
     var dropdown = document.getElementById(id);
     console.log(value);
@@ -254,7 +238,6 @@ function initChoiceById(id, value) {
     choice.setAttribute('selected', 'selected');
 }
 
-// window.onload = function() {
 document.addEventListener('DOMContentLoaded', function() {
 
     if ('{{ evaluation.reference_type }}'=='Generated') {
@@ -289,7 +272,6 @@ function return_to_benchmark() {
         });
 }
 
-// 保存测试配置，刷新
 function save_eval() {
     reference_type = document.getElementById("reference_type").value;
     formatter1 = document.getElementById("formatter1").value;
@@ -316,7 +298,6 @@ function save_eval() {
     location.reload();
 }
 
-// 实时更新流程图配置部分，无关的配置不予显示
 function handle_change() {
     reference_type = document.getElementById("reference_type").value;
 
@@ -328,7 +309,6 @@ function handle_change() {
         document.getElementById('select_model2').style.display = 'block';
         document.getElementById('select_fmt2').style.display = 'block';
     }
-
 }
 
 </script>

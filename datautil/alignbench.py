@@ -7,7 +7,6 @@ class AlignBench(EvalDataset):
         super().__init__(name, subset, split)
 
     def get_dataset_subset(self):
-        # self.data = load_dataset(self.name, name=self.subset)[self.split]
         self.data = []
         with open(r'datautil\raw\alignbench.jsonl', 'r', encoding='utf-8') as fp:
             for line in fp:
@@ -32,16 +31,9 @@ class AlignBench(EvalDataset):
         cur_input = cur_data['question']
         cur_answer = cur_data['reference']
         cur_info = "question_id: {}, category: {}, subcategory: {}".format(cur_data['question_id'], cur_data['category'], cur_data['subcategory'])
-        # cur_info = {
-        #     "question_id": cur_data['question_id'],
-        #     "category": cur_data['category'],
-        #     "subcategory": cur_data['subcategory']
-        # }
         return cur_input, cur_answer, cur_info
 
     def subset_to_json(self, filename):
-        # return super().subset_to_json(filename)
-
         categories = ['专业能力', '数学计算', '基本任务', '逻辑推理', '文本写作', '中文理解', '角色扮演', '综合问答']
         cur_cases = []
         cur_category = 0
@@ -54,18 +46,6 @@ class AlignBench(EvalDataset):
                     json.dump(subset_dict, f, ensure_ascii=False, indent=4)
                 cur_cases = [case]
                 cur_category += 1
-
-        # pass
-        # features = list(self.data.features)
-        # cur_features = [self.data[feature][id] for feature in features]
-        # prompt = '{}\n{}'.format(cur_features[0], cur_features[1])
-        # answer = cur_features[2]
-        # info = {features[3]: cur_features[3],
-        #         features[4]: cur_features[4],
-        #         features[5]: cur_features[5],
-        #         features[6]: cur_features[6],
-        #         features[7]: cur_features[7]}
-        # return prompt, answer, info
 
 aaa = AlignBench('thu-coai/AlignBench', '', '')
 aaa.get_dataset_subset()

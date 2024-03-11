@@ -37,26 +37,16 @@ class EvalDataset:
     def format_cases(self):
         cases = []
 
-        # features = self.data.features
         num_rows = self.data.num_rows
-        ids = []
-        inputs = []
-        answers = []
         for i in range(0, num_rows):
-            # cur_features = [self.data[feature][i] for feature in features]
-            # cur_input = '{}\nA: {}\nB: {}\nC: {}\nD: {}'.format(cur_features[1], cur_features[2], cur_features[3], cur_features[4], cur_features[5])
             cur_input, cur_answer, cur_info = self.formalize_data(i)
 
             cur_case = {
                 "input": cur_input,
-                # "formatter": "extract_choice",
                 "expected_answer": cur_answer,
-                # "evaluator": "exact_match",
-                # "evaluator_args": {},
                 "info": cur_info
                 }
 
-            # print(cur_case)
             cases.append(cur_case)
         self.cases = cases
         return cases

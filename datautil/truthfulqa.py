@@ -1,5 +1,3 @@
-import json
-from datasets import load_dataset
 from EvalDataset import EvalDataset
 
 class TruthfulQA(EvalDataset):
