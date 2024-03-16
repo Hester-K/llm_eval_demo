@@ -54,10 +54,38 @@ API_KEY=
 $ python main.py
 ```
 
+## 项目目录结构
+
+#### datautil/ # 获取Benchmark数据，处理为统一格式
+
+- output/ # 经过整理可以直接使用的Benchmark文件
+- raw/ # 部分Benchmark的原始数据
+- template.json # Benchmark文件模板
+- EvalDataset.py # 处理Benchmark基本代码
+
+#### llm_models/ # 配置，调用llm
+
+- llm_adapter.py # 目前支持GPT-3.5, Gemini-pro, Qwen-max
+- model.py # 调用llm输入prompt
+
+#### static/ # js插件
+
+#### templates/ # 前端页面代码
+
+- benchmark.html 
+- edit.html
+- home.html
+
+#### views/ # 后端代码
+
+- benchmark.py
+- home.py
+- util.py
+
 ## 已支持Benchmark
 
 - C-EVAL：百科知识
-- AlignBench：模型对齐成都
+- AlignBench：模型对齐程度
 - SafetyBench：模型安全性
 - TruthfulQA：模型回答真实性
 
