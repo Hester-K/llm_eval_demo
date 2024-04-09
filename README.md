@@ -12,9 +12,9 @@
 
 - 评测方式：基于模型输出的formatted response与该测试用例的参考答案进行评测。兼容自动化与人工评测的方式，内置常用评测函数如完全匹配精度（accuracy）、rouge-L、Bleu等，也支持以likert量表的形式选择人工打分评测。
 
-以C-EVAL Benchmark为例，选择Given参考答案类型，以精度作为评估指标，测试流程图如下所示，黑色实线箭头即对于选择测试路径。
+以C-EVAL Benchmark为例，选择Given参考答案类型，以人工评价作为测评指标，测试流程图如下所示，黑色实线箭头即对于选择测试路径。
 
-![](https://github.com/Hester-K/llm_eval_demo/blob/master/readme_assets/sample-flowchart.jpg)
+![](https://github.com/Hester-K/llm_eval_demo/blob/master/readme_assets/flowchart1.png)
 
 #### Benchmark文件组织格式
 
