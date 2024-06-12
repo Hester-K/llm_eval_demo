@@ -175,6 +175,7 @@
     </div>
 
     </div>
+    
     <div class="column2">
     <div class="container2">
     <div class="box1">
@@ -213,7 +214,6 @@
     </div>
     </div>
     </div>
-
     <div class="box2">
     <b>Cases</b>
     <button onclick="send_all_case()">run all</button>
@@ -294,7 +294,7 @@ function initChoiceById(id, value) {
 function generate_answer(model, prompt) {
     // 异步
     return new Promise((resolve, reject) => {
-        fetch('/process_data', {
+        fetch('/get_response', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

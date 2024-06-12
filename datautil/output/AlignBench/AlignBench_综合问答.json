@@ -238,7 +238,7 @@
     "evaluation": {
         "target_LLM": "GPT-3.5",
         "target_formatter": "default_format",
-        "reference_type": "generated",
+        "reference_type": "Generated",
         "reference_LLM": "Qwen-max",
         "reference_formatter": "default_format",
         "evaluator": "rougeL",

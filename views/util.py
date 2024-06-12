@@ -4,8 +4,8 @@ import json
 
 util_api = Blueprint('util_api', __name__)
 
-@util_api.route('/process_data', methods=['GET', 'POST'])
-def process_data():
+@util_api.route('/get_response', methods=['GET', 'POST'])
+def get_response():
     print(request)
     if request.method == 'POST':
         req_input = request.json.get('input')

@@ -234,7 +234,7 @@
     "evaluation": {
         "target_LLM": "GPT-3.5",
         "target_formatter": "extract_ABCD",
-        "reference_type": "given",
+        "reference_type": "Given",
         "reference_LLM": "None",
         "reference_formatter": "extract_ABCD",
         "evaluator": "accuracy",

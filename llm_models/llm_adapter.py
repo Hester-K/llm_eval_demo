@@ -62,12 +62,18 @@ class GeminiAdaptor(LLMAdaptor):
         return response.text
 
 class QWenAdaptor(LLMAdaptor):
-    def __init__(self) -> None:
+    def __init__(self, name) -> None:
         super().__init__()        
         self.api_key=self.config.get('Qwen', 'API_KEY')
         print(self.api_key)
         dashscope.api_key = self.api_key
-        self.model = dashscope.Generation.Models.qwen_max
+        # self.model = dashscope.Generation.Models.qwen_max
+        if name == 'max':
+            self.model = dashscope.Generation.Models.qwen_max
+        elif name == 'turbo':
+            self.model = dashscope.Generation.Models.qwen_turbo
+        else:
+            self.model = dashscope.Generation.Models.qwen_plus
 
     def get_response(self, prompt_text) -> str:
         response = dashscope.Generation.call(
@@ -75,3 +81,8 @@ class QWenAdaptor(LLMAdaptor):
             prompt = prompt_text
         )
         return response.output.text
+
+# adapter = QWenAdaptor()
+# adapter = GeminiAdaptor()
+# prompt = '你好'
+# print(adapter.get_response(prompt))
