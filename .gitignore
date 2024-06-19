@@ -3,3 +3,4 @@ temp.*
 temp_*
 upload/*
 model_config.ini
+download

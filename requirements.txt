@@ -1,6 +1,9 @@
 dashscope==1.14.1
 datasets==2.17.0
-Flask==3.0.2
+Flask==3.0.3
 func_timeout==4.3.5
-openai==1.13.3
-protobuf==4.25.3
+ollama==0.2.1
+openai==1.34.0
+protobuf==5.27.1
+Requests==2.32.3
+tqdm==4.64.1

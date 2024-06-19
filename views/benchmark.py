@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, url_for, redirect, session
 import json
-from llm_models import get_llms
+from llm_models import get_ollama_llms
+# from llm_models import get_llms
 
 benchmark_api = Blueprint('benchmark_api', __name__)
 
@@ -43,7 +44,8 @@ def edit_benchmark(filename):
             func['definition'] = '\n'.join(func['definition'])
         func['definition'] = func['definition'].replace('evaluator', func['name'], 1)
     bench_data['filename'] = filename
-    bench_data['llms'] = get_llms()
+    # bench_data['llms'] = get_llms()
+    bench_data['llms'] = get_ollama_llms()
     bench_data['results'] = session['{}_results'.format(filename)]
     return render_template("edit.html", template_folder="templates", **bench_data)
 

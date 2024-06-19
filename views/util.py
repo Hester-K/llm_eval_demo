@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify
-from llm_models.model import get_llm_response
+# from llm_models.model import get_llm_response
+from llm_models.ollama_model import get_ollama_llm_response
 import json
 
 util_api = Blueprint('util_api', __name__)
@@ -12,7 +13,8 @@ def get_response():
         model = request.json.get('model')
         print("input:", req_input, "model:", model)
         response_data = {
-            'response': get_llm_response(req_input, model)
+            'response': get_ollama_llm_response(req_input, model)
+            # 'response': get_llm_response(req_input, model)
         }
         print(jsonify(response_data))
         return jsonify(response_data)
